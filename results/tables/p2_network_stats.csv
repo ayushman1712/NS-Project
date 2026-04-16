@@ -1,0 +1,6 @@
+network,nodes,edges,density,avg_degree,giant_component,components
+full,199,1221,0.062,12.27,129,54
+cold_war,171,626,0.0431,7.32,128,39
+post_cw,189,1514,0.0852,16.02,78,52
+post_9_11,193,2246,0.1212,23.27,96,45
+recent,193,2051,0.1107,21.25,168,26

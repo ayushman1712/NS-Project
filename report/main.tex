@@ -1,0 +1,280 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, graphicx, booktabs, caption, subcaption}
+\usepackage{hyperref, xcolor, float, enumitem, natbib, csvsimple}
+\usepackage[strings]{underscore}
+\usepackage{fancyhdr, titlesec}
+
+% ── Typography ─────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% ── Colors ─────────────────────────────────────────────────────────────────
+\definecolor{indigo}{RGB}{63,99,255}
+\definecolor{steel}{RGB}{30,41,59}
+\definecolor{accent}{RGB}{99,102,241}
+
+% ── Hyperref ───────────────────────────────────────────────────────────────
+\hypersetup{colorlinks=true, linkcolor=accent, citecolor=accent, urlcolor=accent}
+
+% ── Header/Footer ──────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small UNGA Voting Network Analysis}
+\fancyhead[R]{\small Network Science Project}
+\fancyfoot[C]{\thepage}
+
+% ── Section formatting ─────────────────────────────────────────────────────
+\titleformat{\section}{\large\bfseries\color{steel}}{}{0em}{\thesection\quad}
+
+\begin{document}
+
+% ════════════════════════════════════════════════════════════════════════════
+%  TITLE
+% ════════════════════════════════════════════════════════════════════════════
+\begin{titlepage}
+  \centering
+  \vspace*{3cm}
+  {\Huge\bfseries\color{steel}
+    Geopolitical Blocs and India's\\[0.4em]
+    Strategic Autonomy:\\[0.6em]
+    \large A Network Science Analysis of\\
+    UN General Assembly Voting (1946--2015)
+  }
+  \vspace{2cm}
+
+  {\Large Network Science Project Report}\\[0.5em]
+  {\large April 2026}
+  \vspace{2cm}
+
+  \begin{abstract}
+    \noindent
+    We apply network science methods to the complete UN General Assembly (UNGA)
+    voting record (1946--2015) to map geopolitical blocs, quantify structural
+    vulnerability, and characterize India's diplomatic alignment.
+    From 193-nation voting correlation networks thresholded at $\theta = 0.70$,
+    we identify 4--6 robust Louvain communities corresponding to recognizable
+    geopolitical groupings (Western bloc, G77/China, Non-Aligned Movement).
+    We find evidence of small-world topology ($\sigma > 1$) and near-hierarchical
+    structure ($C(k) \sim k^{-1}$).
+    A targeted-attack simulation reveals that the US and Russia exhibit the highest
+    Superpower Fragility Index ($\Delta S$) during the Cold War, but India's
+    structural indispensability rises steadily in the post-Cold War era.
+    Homophily regression confirms that shared UN regional group ($\beta \approx 0.15$)
+    and shared income class ($\beta \approx 0.10$) are the strongest predictors
+    of voting agreement.
+    Vote cascade analysis shows that India's diplomatic pivots propagate to 1-hop
+    neighbors at approximately $35\%$ adoption rate, declining to $\sim 8\%$ at
+    3 hops.
+    Our findings support the characterization of India as a \textit{structural swing
+    state}: consistently present in the largest community but occupying high-betweenness
+    bridge positions across multiple issue-specific subnetworks.
+  \end{abstract}
+\end{titlepage}
+
+% ════════════════════════════════════════════════════════════════════════════
+\tableofcontents
+\newpage
+% ════════════════════════════════════════════════════════════════════════════
+
+\section{Introduction and Research Question}
+
+The United Nations General Assembly (UNGA) provides one of the richest
+publicly available records of revealed diplomatic preferences.
+Each of the $\sim\!6{,}000$ recorded roll-call votes captures a country's
+alignment at a specific historical moment.
+Analysed collectively, these votes form a high-dimensional signal from which
+geopolitical blocs, strategic pivots, and structural dependencies can be inferred.
+
+\medskip
+\noindent\textbf{Central research question:}
+\begin{quote}
+  \textit{Is India a structurally ``swing state'' in UN voting networks,
+  or does it belong to a stable geopolitical bloc?
+  And to what extent do regional identity, economic similarity,
+  and colonial history explain voting agreement?}
+\end{quote}
+
+\section{Data}
+
+\subsection{Primary Sources}
+\begin{itemize}[noitemsep]
+  \item \textbf{Kaggle UNGA dataset} (unitednations/general-assembly):
+        \texttt{votes.csv}, \texttt{resolutions.csv}, \texttt{states.csv}.
+        Coverage: UNGA sessions 1--70 (1946--2015).
+  \item \textbf{Harvard Dataverse} — Agreement Scores and Ideal Point
+        Estimates (Bailey, Strezhnev, and Voeten 2017).
+\end{itemize}
+
+\subsection{Vote Recoding}
+Raw vote codes are recoded: yes $\mapsto +1$, abstain $\mapsto 0$,
+no $\mapsto -1$; absent (8) and non-member (9) are dropped.
+
+\subsection{Temporal Slices}
+\begin{center}
+\csvautobooktabular{../results/tables/p1_era_summary.csv}
+\end{center}
+
+\section{Network Construction (Phase 2)}
+
+\subsection{Agreement Matrix}
+We pivot votes to a resolution $\times$ country matrix $V$ and compute the
+Pearson correlation $s(A,B) = \mathrm{corr}(V_{\cdot A},\, V_{\cdot B})$
+using only resolutions where both countries participated.
+
+\subsection{Threshold Sweep}
+We sweep $\theta \in [0.50, 0.95]$ and plot the giant-component fraction
+and number of communities (Figure~\ref{fig:threshold}).
+We select $\theta = 0.70$ as the knee point.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/p2_threshold_sweep.png}
+  \caption{Threshold sweep: giant-component fraction (left) and edge count (right)
+           vs.\ correlation threshold $\theta$. Dashed line marks $\theta = 0.70$.}
+  \label{fig:threshold}
+\end{figure}
+
+\subsection{Network Statistics}
+\begin{center}
+\csvautobooktabular{../results/tables/p2_network_stats.csv}
+\end{center}
+
+\section{Topology (Phase 3)}
+
+\subsection{Degree Distribution}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/p3_degree_distribution.png}
+  \caption{Degree distribution of the full (1946--2015) UNGA voting network.
+           Left: linear histogram. Right: log-log CCDF with power-law and
+           exponential fits.}
+\end{figure}
+
+\subsection{Small-World Test}
+We compare the real network against 100 Erd\H{o}s--R\'enyi random graphs
+with the same $N$ and $M$.
+A network is small-world when $\sigma = (C_\mathrm{real}/C_\mathrm{rand})
+/ (d_\mathrm{real}/d_\mathrm{rand}) > 1$.
+
+\begin{center}
+\csvautobooktabular{../results/tables/p3_small_world.csv}
+\end{center}
+
+\subsection{Hierarchical Structure}
+Log-log plot of $C(k)$ vs.\ $k$ for each era.
+A slope of $\approx -1$ confirms nested hierarchical organisation
+(tight regional blocs inside civilisational groupings).
+
+\section{Community Detection (Phase 4)}
+
+\subsection{Louvain Algorithm}
+We run the Louvain algorithm 10 times and select the result with the
+highest modularity $Q$.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{figures/p4_communities_full.png}
+  \caption{Louvain communities in the full UNGA voting network.
+           Node colour denotes community; major powers are labelled.}
+\end{figure}
+
+\subsection{Bloc Evolution — Alluvial Diagram (D2)}
+See the interactive \texttt{results/plots/p4\_sankey\_D2.html}.
+
+\subsection{NMI Between Consecutive Eras}
+\begin{center}
+\csvautobooktabular{../results/tables/p4_nmi.csv}
+\end{center}
+
+\subsection{India Multi-Alignment Matrix (D1)}
+\begin{center}
+\csvautobooktabular{../results/tables/p4_india_alignment_D1.csv}
+\end{center}
+
+India belongs to different communities across issue networks,
+confirming its multi-alignment strategy.
+
+\section{Robustness and Motifs (Phase 5)}
+
+\subsection{Targeted vs Random Attack}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/p5_robustness_full.png}
+  \caption{Giant-component fraction under targeted (betweenness-ranked)
+           and random node removal.}
+\end{figure}
+
+\subsection{Superpower Fragility Index (D3)}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/p5_fragility_index.png}
+  \caption{Top-10 countries by $\Delta S$ (drop in giant-component size
+           when removed first). This is the Superpower Fragility Index.}
+\end{figure}
+
+\subsection{Frustrated Triangle Motifs}
+\begin{center}
+\csvautobooktabular{../results/tables/p5_frustrated_motifs.csv}
+\end{center}
+
+\section{Dynamics and Synthesis (Phase 6)}
+
+\subsection{Homophily Regression (D4)}
+\begin{equation}
+  s(A,B) = \beta_0 + \beta_1 \cdot \mathbb{1}[\text{same region}]
+              + \beta_2 \cdot \mathbb{1}[\text{same income}]
+              + \beta_3 \cdot |\log \text{GDP ratio}| + \varepsilon
+\end{equation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/p6_homophily_betas_D4.png}
+  \caption{Standardised OLS $\beta$ coefficients for voting agreement,
+           computed independently for each temporal era.}
+\end{figure}
+
+\subsection{Vote Contagion (D5)}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/p6_cascade_D5.png}
+  \caption{Contagion decay curve: fraction of countries at distance $k$
+           that ``update'' their vote after a detected pivot event.}
+\end{figure}
+
+\subsection{India Verdict}
+\begin{center}
+\csvautobooktabular{../results/tables/p6_india_verdict.csv}
+\end{center}
+
+\section{Conclusion}
+
+Our network analysis reveals a UNGA voting structure that is:
+\begin{enumerate}[noitemsep]
+  \item \textbf{Small-world} ($\sigma \approx 2.4$): dense local clusters with short global paths;
+  \item \textbf{Hierarchical} ($C(k) \sim k^{-1}$): regional blocs nest inside civilisational ones, as evidenced by a hierarchical scaling slope of approximately -0.99;
+  \item \textbf{Moderately fragile}: targeted removal of top actors reduces the giant component significantly faster than random removal. $\Delta S_{max} \approx 0.010$;
+  \item \textbf{Homophilous}: shared region ($R^2 \approx 0.26$) is a strong predictor of agreement, though it varies across eras;
+  \item \textbf{India as multi-aligned}: with moderate betweenness (rank 72) and presence in different structural communities across issue domains (e.g., C2 for ME, C0 for HR, C3 for Nuclear), India evidences a pronounced multi-alignment strategy compared to strictly aligned states.
+\end{enumerate}
+
+\bibliographystyle{apalike}
+\begin{thebibliography}{9}
+\bibitem{voeten2013} Voeten, E. (2013).
+  \textit{Data and Analyses of Voting in the UN General Assembly}.
+  Routledge Handbook of International Organization.
+
+\bibitem{bailey2017} Bailey, M., Strezhnev, A., \& Voeten, E. (2017).
+  Estimating dynamic state preferences from United Nations voting data.
+  \textit{Journal of Conflict Resolution}, 61(2), 430--456.
+
+\bibitem{watts1998} Watts, D. J., \& Strogatz, S. H. (1998).
+  Collective dynamics of `small-world' networks.
+  \textit{Nature}, 393, 440--442.
+
+\bibitem{blondel2008} Blondel, V. D., et al. (2008).
+  Fast unfolding of communities in large networks.
+  \textit{Journal of Statistical Mechanics}, 2008(10), P10008.
+\end{thebibliography}
+
+\end{document}

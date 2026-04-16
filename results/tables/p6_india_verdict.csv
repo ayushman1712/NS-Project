@@ -1,0 +1,11 @@
+Metric,India Value,Notes
+Degree centrality rank,174,Higher rank = more connected
+Betweenness centrality rank,148,Higher rank = more bridge-role
+Eigenvector centrality rank,174,Higher rank = better connected neighbours
+Fragility rank (ΔS),162,ΔS=0.0
+Community in Israel/Palestine,Community 2,
+Community in Colonization,Community 0,
+Community in Human Rights,Community 0,
+Community in Disarmament,Community 3,
+Community in Nuclear,Community 3,
+Community in Economic Dev,Community 0,

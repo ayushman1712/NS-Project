@@ -1,0 +1,2572 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="income" attr.type="string" />
+  <key id="d1" for="node" attr.name="region" attr.type="string" />
+  <key id="d0" for="graph" attr.name="name" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Afghanistan">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Albania">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Algeria">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Angola">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Antigua &amp; Barbuda">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Argentina">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Australia">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Austria">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Bahamas">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Bahrain">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Bangladesh">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Barbados">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Belarus">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Belgium">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Belize">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Benin">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Bhutan">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Bolivia">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Botswana">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Brazil">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Brunei">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Bulgaria">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Burkina Faso">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Burundi">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Cambodia">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Cameroon">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Canada">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Cape Verde">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Central African Republic">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Chad">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Chile">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="China">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Colombia">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Comoros">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Congo">
+      <data key="d1">Unknown</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Costa Rica">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Cuba">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Cyprus">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Czechoslovakia">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Democratic Republic of the Congo">
+      <data key="d1">Unknown</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Denmark">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Djibouti">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Dominica">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Dominican Republic">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Ecuador">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Egypt">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="El Salvador">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Equatorial Guinea">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Estonia">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Ethiopia">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Federated States of Micronesia">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Fiji">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Finland">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="France">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Gabon">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Gambia">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="German Democratic Republic">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="German Federal Republic">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Germany">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Ghana">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Greece">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Grenada">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Guatemala">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Guinea">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Guinea-Bissau">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Guyana">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Haiti">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Honduras">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Hungary">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Iceland">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="India">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Indonesia">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Iran">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Iraq">
+      <data key="d1">ArabStates</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Ireland">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Israel">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Italy">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Ivory Coast">
+      <data key="d1">Unknown</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Jamaica">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Japan">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Jordan">
+      <data key="d1">ArabStates</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Kenya">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Kuwait">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Laos">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Latvia">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Lebanon">
+      <data key="d1">ArabStates</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Lesotho">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Liberia">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Libya">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Liechtenstein">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Lithuania">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Luxembourg">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Madagascar">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Malawi">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Malaysia">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Maldives">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Mali">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Malta">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Marshall Islands">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Mauritania">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Mauritius">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Mexico">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Mongolia">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Morocco">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Mozambique">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Myanmar">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Namibia">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Nepal">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Netherlands">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="New Zealand">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Nicaragua">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Niger">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Nigeria">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="North Korea">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Norway">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Oman">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Pakistan">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Panama">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Papua New Guinea">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Paraguay">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Peru">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Philippines">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Poland">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Portugal">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Qatar">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Romania">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Russia">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Rwanda">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Samoa">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Sao Tome and Principe">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Saudi Arabia">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Senegal">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Seychelles">
+      <data key="d1">Africa</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Sierra Leone">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Singapore">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Solomon Islands">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Somalia">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="South Africa">
+      <data key="d1">Africa</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="South Korea">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Spain">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Sri Lanka">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="St. Kitts and Nevis">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="St. Lucia">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="St. Vincent and the Grenadines">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Sudan">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Suriname">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Swaziland">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Sweden">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Syria">
+      <data key="d1">ArabStates</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Taiwan">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Tanzania">
+      <data key="d1">Unknown</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Thailand">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Togo">
+      <data key="d1">Africa</data>
+      <data key="d2">Low income</data>
+    </node>
+    <node id="Trinidad and Tobago">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Tunisia">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Turkey">
+      <data key="d1">WEOG</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Uganda">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Ukraine">
+      <data key="d1">EasternEurope</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="United Arab Emirates">
+      <data key="d1">ArabStates</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="United Kingdom">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="United States of America">
+      <data key="d1">WEOG</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Uruguay">
+      <data key="d1">GRULAC</data>
+      <data key="d2">High income</data>
+    </node>
+    <node id="Vanuatu">
+      <data key="d1">AsiaPacific</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Venezuela">
+      <data key="d1">GRULAC</data>
+      <data key="d2">Upper middle income</data>
+    </node>
+    <node id="Vietnam">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Yemen">
+      <data key="d1">ArabStates</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Yemen Arab Republic">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Yemen People's Republic">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Yugoslavia">
+      <data key="d1">Unknown</data>
+      <data key="d2">Unknown</data>
+    </node>
+    <node id="Zambia">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <node id="Zimbabwe">
+      <data key="d1">Africa</data>
+      <data key="d2">Lower middle income</data>
+    </node>
+    <edge source="Afghanistan" target="Angola">
+      <data key="d3">0.7684047655746726</data>
+    </edge>
+    <edge source="Afghanistan" target="Mozambique">
+      <data key="d3">0.754961181055209</data>
+    </edge>
+    <edge source="Afghanistan" target="North Korea">
+      <data key="d3">0.7002746713858894</data>
+    </edge>
+    <edge source="Afghanistan" target="Seychelles">
+      <data key="d3">0.733325049610712</data>
+    </edge>
+    <edge source="Afghanistan" target="Syria">
+      <data key="d3">0.7576157774477958</data>
+    </edge>
+    <edge source="Afghanistan" target="Vietnam">
+      <data key="d3">0.921184657242298</data>
+    </edge>
+    <edge source="Afghanistan" target="Yemen">
+      <data key="d3">0.9105059862561927</data>
+    </edge>
+    <edge source="Afghanistan" target="Yemen Arab Republic">
+      <data key="d3">0.7419953023892156</data>
+    </edge>
+    <edge source="Afghanistan" target="Yemen People's Republic">
+      <data key="d3">0.7095596922244051</data>
+    </edge>
+    <edge source="Albania" target="Algeria">
+      <data key="d3">0.7545333307687283</data>
+    </edge>
+    <edge source="Albania" target="Belarus">
+      <data key="d3">0.8338391955997657</data>
+    </edge>
+    <edge source="Albania" target="Bulgaria">
+      <data key="d3">0.8233435983033788</data>
+    </edge>
+    <edge source="Albania" target="Czechoslovakia">
+      <data key="d3">0.8177616212362483</data>
+    </edge>
+    <edge source="Albania" target="Estonia">
+      <data key="d3">0.8869460649540374</data>
+    </edge>
+    <edge source="Albania" target="Guinea">
+      <data key="d3">0.72970250055874</data>
+    </edge>
+    <edge source="Albania" target="Hungary">
+      <data key="d3">0.8115876500289648</data>
+    </edge>
+    <edge source="Albania" target="Latvia">
+      <data key="d3">0.8499766054397481</data>
+    </edge>
+    <edge source="Albania" target="Lithuania">
+      <data key="d3">0.7448875201207372</data>
+    </edge>
+    <edge source="Albania" target="Mongolia">
+      <data key="d3">0.7569842193358259</data>
+    </edge>
+    <edge source="Albania" target="Poland">
+      <data key="d3">0.7690046521215387</data>
+    </edge>
+    <edge source="Albania" target="Romania">
+      <data key="d3">0.7933870366256974</data>
+    </edge>
+    <edge source="Albania" target="Russia">
+      <data key="d3">0.8278669502544628</data>
+    </edge>
+    <edge source="Albania" target="Syria">
+      <data key="d3">0.749423669699622</data>
+    </edge>
+    <edge source="Albania" target="Ukraine">
+      <data key="d3">0.827279692500103</data>
+    </edge>
+    <edge source="Albania" target="Yemen Arab Republic">
+      <data key="d3">0.7304937684251194</data>
+    </edge>
+    <edge source="Algeria" target="Angola">
+      <data key="d3">0.8065788957932425</data>
+    </edge>
+    <edge source="Algeria" target="Burundi">
+      <data key="d3">0.7327921162415645</data>
+    </edge>
+    <edge source="Algeria" target="Congo">
+      <data key="d3">0.7996910154800289</data>
+    </edge>
+    <edge source="Algeria" target="Cuba">
+      <data key="d3">0.7483742185755076</data>
+    </edge>
+    <edge source="Algeria" target="Guinea">
+      <data key="d3">0.7995623498625347</data>
+    </edge>
+    <edge source="Algeria" target="Iraq">
+      <data key="d3">0.7864779080188631</data>
+    </edge>
+    <edge source="Algeria" target="Libya">
+      <data key="d3">0.7326145916790126</data>
+    </edge>
+    <edge source="Algeria" target="Mali">
+      <data key="d3">0.7892196976685906</data>
+    </edge>
+    <edge source="Algeria" target="Mauritania">
+      <data key="d3">0.7211963497819137</data>
+    </edge>
+    <edge source="Algeria" target="Sudan">
+      <data key="d3">0.7239017614953394</data>
+    </edge>
+    <edge source="Algeria" target="Syria">
+      <data key="d3">0.8306346785142052</data>
+    </edge>
+    <edge source="Algeria" target="Tanzania">
+      <data key="d3">0.7779314075595026</data>
+    </edge>
+    <edge source="Algeria" target="Uganda">
+      <data key="d3">0.7128414421117866</data>
+    </edge>
+    <edge source="Algeria" target="Yemen">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="Algeria" target="Yemen Arab Republic">
+      <data key="d3">0.7963871543546641</data>
+    </edge>
+    <edge source="Algeria" target="Yemen People's Republic">
+      <data key="d3">0.8276508539497467</data>
+    </edge>
+    <edge source="Algeria" target="Yugoslavia">
+      <data key="d3">0.7868709592162194</data>
+    </edge>
+    <edge source="Algeria" target="Zambia">
+      <data key="d3">0.7207234982136109</data>
+    </edge>
+    <edge source="Angola" target="Benin">
+      <data key="d3">0.7443664573999066</data>
+    </edge>
+    <edge source="Angola" target="Congo">
+      <data key="d3">0.7808533367100758</data>
+    </edge>
+    <edge source="Angola" target="Cuba">
+      <data key="d3">0.8138085677259511</data>
+    </edge>
+    <edge source="Angola" target="Ethiopia">
+      <data key="d3">0.8183506808624621</data>
+    </edge>
+    <edge source="Angola" target="Laos">
+      <data key="d3">0.7828167625146449</data>
+    </edge>
+    <edge source="Angola" target="Libya">
+      <data key="d3">0.7841817101254372</data>
+    </edge>
+    <edge source="Angola" target="Madagascar">
+      <data key="d3">0.7765126912294518</data>
+    </edge>
+    <edge source="Angola" target="Mozambique">
+      <data key="d3">0.767250498877226</data>
+    </edge>
+    <edge source="Angola" target="North Korea">
+      <data key="d3">1.0000000000000002</data>
+    </edge>
+    <edge source="Angola" target="Syria">
+      <data key="d3">0.7776555938329122</data>
+    </edge>
+    <edge source="Angola" target="Vietnam">
+      <data key="d3">0.7957354985445246</data>
+    </edge>
+    <edge source="Angola" target="Yemen">
+      <data key="d3">0.7004041959724749</data>
+    </edge>
+    <edge source="Angola" target="Yemen People's Republic">
+      <data key="d3">0.8884393709212796</data>
+    </edge>
+    <edge source="Argentina" target="Bolivia">
+      <data key="d3">0.7033758978929647</data>
+    </edge>
+    <edge source="Argentina" target="Brazil">
+      <data key="d3">0.7157084788039957</data>
+    </edge>
+    <edge source="Argentina" target="Estonia">
+      <data key="d3">0.7726351864209514</data>
+    </edge>
+    <edge source="Argentina" target="Latvia">
+      <data key="d3">0.7772447371137889</data>
+    </edge>
+    <edge source="Argentina" target="Marshall Islands">
+      <data key="d3">0.7369763138917559</data>
+    </edge>
+    <edge source="Australia" target="Austria">
+      <data key="d3">0.7100859306973535</data>
+    </edge>
+    <edge source="Australia" target="Belgium">
+      <data key="d3">0.7719354513781508</data>
+    </edge>
+    <edge source="Australia" target="Canada">
+      <data key="d3">0.7776934024714894</data>
+    </edge>
+    <edge source="Australia" target="Denmark">
+      <data key="d3">0.7110599215552635</data>
+    </edge>
+    <edge source="Australia" target="Estonia">
+      <data key="d3">0.8979502953147093</data>
+    </edge>
+    <edge source="Australia" target="Germany">
+      <data key="d3">0.7498701945537994</data>
+    </edge>
+    <edge source="Australia" target="Iceland">
+      <data key="d3">0.7401783188664153</data>
+    </edge>
+    <edge source="Australia" target="Italy">
+      <data key="d3">0.7539235970099668</data>
+    </edge>
+    <edge source="Australia" target="Latvia">
+      <data key="d3">0.8939436405088921</data>
+    </edge>
+    <edge source="Australia" target="Liechtenstein">
+      <data key="d3">0.8164265345252643</data>
+    </edge>
+    <edge source="Australia" target="Lithuania">
+      <data key="d3">0.7369245513115694</data>
+    </edge>
+    <edge source="Australia" target="Luxembourg">
+      <data key="d3">0.7862336332533639</data>
+    </edge>
+    <edge source="Australia" target="Netherlands">
+      <data key="d3">0.7744392513803219</data>
+    </edge>
+    <edge source="Australia" target="New Zealand">
+      <data key="d3">0.8709104930676701</data>
+    </edge>
+    <edge source="Australia" target="Norway">
+      <data key="d3">0.7281977128817182</data>
+    </edge>
+    <edge source="Austria" target="Denmark">
+      <data key="d3">0.7615663487652085</data>
+    </edge>
+    <edge source="Austria" target="Estonia">
+      <data key="d3">0.8878878026939505</data>
+    </edge>
+    <edge source="Austria" target="Finland">
+      <data key="d3">0.7261922832802008</data>
+    </edge>
+    <edge source="Austria" target="Iceland">
+      <data key="d3">0.7298334444112943</data>
+    </edge>
+    <edge source="Austria" target="Ireland">
+      <data key="d3">0.7671197435458182</data>
+    </edge>
+    <edge source="Austria" target="Latvia">
+      <data key="d3">0.9028883013947285</data>
+    </edge>
+    <edge source="Austria" target="Liechtenstein">
+      <data key="d3">0.9095000302134237</data>
+    </edge>
+    <edge source="Austria" target="Lithuania">
+      <data key="d3">0.7531446678801506</data>
+    </edge>
+    <edge source="Austria" target="Marshall Islands">
+      <data key="d3">0.7117770058270332</data>
+    </edge>
+    <edge source="Austria" target="New Zealand">
+      <data key="d3">0.724844737967578</data>
+    </edge>
+    <edge source="Austria" target="Norway">
+      <data key="d3">0.7509338349965349</data>
+    </edge>
+    <edge source="Austria" target="Sweden">
+      <data key="d3">0.7971170808137655</data>
+    </edge>
+    <edge source="Bahrain" target="Kuwait">
+      <data key="d3">0.7667121326956419</data>
+    </edge>
+    <edge source="Bahrain" target="Oman">
+      <data key="d3">0.7038249361440395</data>
+    </edge>
+    <edge source="Bahrain" target="Qatar">
+      <data key="d3">0.8405569533473841</data>
+    </edge>
+    <edge source="Bahrain" target="United Arab Emirates">
+      <data key="d3">0.8666485822716811</data>
+    </edge>
+    <edge source="Bangladesh" target="Brunei">
+      <data key="d3">0.7270569309161063</data>
+    </edge>
+    <edge source="Bangladesh" target="North Korea">
+      <data key="d3">0.7004041959724749</data>
+    </edge>
+    <edge source="Bangladesh" target="Pakistan">
+      <data key="d3">0.7578804970557966</data>
+    </edge>
+    <edge source="Bangladesh" target="Yemen">
+      <data key="d3">0.8146146122025233</data>
+    </edge>
+    <edge source="Belarus" target="Bulgaria">
+      <data key="d3">0.9779488235303945</data>
+    </edge>
+    <edge source="Belarus" target="Czechoslovakia">
+      <data key="d3">0.9708023229623219</data>
+    </edge>
+    <edge source="Belarus" target="German Democratic Republic">
+      <data key="d3">0.9782987035317537</data>
+    </edge>
+    <edge source="Belarus" target="Hungary">
+      <data key="d3">0.9707879604235494</data>
+    </edge>
+    <edge source="Belarus" target="Mongolia">
+      <data key="d3">0.983940438127645</data>
+    </edge>
+    <edge source="Belarus" target="Poland">
+      <data key="d3">0.9574649628494621</data>
+    </edge>
+    <edge source="Belarus" target="Romania">
+      <data key="d3">0.7473019143977302</data>
+    </edge>
+    <edge source="Belarus" target="Russia">
+      <data key="d3">0.9956227250495495</data>
+    </edge>
+    <edge source="Belarus" target="Ukraine">
+      <data key="d3">0.9965434096339636</data>
+    </edge>
+    <edge source="Belarus" target="Vietnam">
+      <data key="d3">0.8118203446239189</data>
+    </edge>
+    <edge source="Belgium" target="Canada">
+      <data key="d3">0.7998259914687107</data>
+    </edge>
+    <edge source="Belgium" target="Estonia">
+      <data key="d3">0.872495911728546</data>
+    </edge>
+    <edge source="Belgium" target="France">
+      <data key="d3">0.7699062882097104</data>
+    </edge>
+    <edge source="Belgium" target="German Federal Republic">
+      <data key="d3">0.8944704186095144</data>
+    </edge>
+    <edge source="Belgium" target="Germany">
+      <data key="d3">0.9678786875236588</data>
+    </edge>
+    <edge source="Belgium" target="Italy">
+      <data key="d3">0.8924900237355979</data>
+    </edge>
+    <edge source="Belgium" target="Japan">
+      <data key="d3">0.7260229522110863</data>
+    </edge>
+    <edge source="Belgium" target="Latvia">
+      <data key="d3">0.8841861181100447</data>
+    </edge>
+    <edge source="Belgium" target="Liechtenstein">
+      <data key="d3">0.7988197636252673</data>
+    </edge>
+    <edge source="Belgium" target="Lithuania">
+      <data key="d3">0.7134528958419487</data>
+    </edge>
+    <edge source="Belgium" target="Luxembourg">
+      <data key="d3">0.9498643279150197</data>
+    </edge>
+    <edge source="Belgium" target="Netherlands">
+      <data key="d3">0.871754097211915</data>
+    </edge>
+    <edge source="Belgium" target="New Zealand">
+      <data key="d3">0.7540670593426896</data>
+    </edge>
+    <edge source="Belgium" target="Portugal">
+      <data key="d3">0.7109913349772481</data>
+    </edge>
+    <edge source="Belgium" target="United Kingdom">
+      <data key="d3">0.8050805095383416</data>
+    </edge>
+    <edge source="Benin" target="Cape Verde">
+      <data key="d3">0.7234083851554505</data>
+    </edge>
+    <edge source="Benin" target="Madagascar">
+      <data key="d3">0.7676386409791766</data>
+    </edge>
+    <edge source="Bolivia" target="Colombia">
+      <data key="d3">0.7115772891976695</data>
+    </edge>
+    <edge source="Bolivia" target="Costa Rica">
+      <data key="d3">0.7071808631210631</data>
+    </edge>
+    <edge source="Bolivia" target="Dominican Republic">
+      <data key="d3">0.7128479604741869</data>
+    </edge>
+    <edge source="Bolivia" target="Ecuador">
+      <data key="d3">0.7182349304291852</data>
+    </edge>
+    <edge source="Bolivia" target="El Salvador">
+      <data key="d3">0.7246981776088359</data>
+    </edge>
+    <edge source="Bolivia" target="Honduras">
+      <data key="d3">0.7280469270157375</data>
+    </edge>
+    <edge source="Bolivia" target="Nicaragua">
+      <data key="d3">0.7249397034450166</data>
+    </edge>
+    <edge source="Bolivia" target="Panama">
+      <data key="d3">0.705052493862012</data>
+    </edge>
+    <edge source="Bolivia" target="Paraguay">
+      <data key="d3">0.752479587771773</data>
+    </edge>
+    <edge source="Bolivia" target="Uruguay">
+      <data key="d3">0.740337869179987</data>
+    </edge>
+    <edge source="Bolivia" target="Venezuela">
+      <data key="d3">0.7060461910696653</data>
+    </edge>
+    <edge source="Botswana" target="Lesotho">
+      <data key="d3">0.7043896072803028</data>
+    </edge>
+    <edge source="Brazil" target="Colombia">
+      <data key="d3">0.7058330460635679</data>
+    </edge>
+    <edge source="Brunei" target="Malaysia">
+      <data key="d3">0.7542659128136955</data>
+    </edge>
+    <edge source="Brunei" target="Morocco">
+      <data key="d3">0.7207102201431324</data>
+    </edge>
+    <edge source="Brunei" target="Niger">
+      <data key="d3">0.7422654561741866</data>
+    </edge>
+    <edge source="Brunei" target="North Korea">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="Brunei" target="Oman">
+      <data key="d3">0.7341440442874164</data>
+    </edge>
+    <edge source="Brunei" target="Pakistan">
+      <data key="d3">0.7157729815424209</data>
+    </edge>
+    <edge source="Brunei" target="Saudi Arabia">
+      <data key="d3">0.7003626243632352</data>
+    </edge>
+    <edge source="Brunei" target="Somalia">
+      <data key="d3">0.8144887594198714</data>
+    </edge>
+    <edge source="Brunei" target="Sri Lanka">
+      <data key="d3">0.7475713567739185</data>
+    </edge>
+    <edge source="Brunei" target="Thailand">
+      <data key="d3">0.7229864018197149</data>
+    </edge>
+    <edge source="Brunei" target="Yemen">
+      <data key="d3">0.8146146122025233</data>
+    </edge>
+    <edge source="Bulgaria" target="Czechoslovakia">
+      <data key="d3">0.9847531524037706</data>
+    </edge>
+    <edge source="Bulgaria" target="Estonia">
+      <data key="d3">0.8938806048148933</data>
+    </edge>
+    <edge source="Bulgaria" target="German Democratic Republic">
+      <data key="d3">0.9730942122611255</data>
+    </edge>
+    <edge source="Bulgaria" target="Germany">
+      <data key="d3">0.801535449417569</data>
+    </edge>
+    <edge source="Bulgaria" target="Hungary">
+      <data key="d3">0.9819818669417022</data>
+    </edge>
+    <edge source="Bulgaria" target="Latvia">
+      <data key="d3">0.8858128609404634</data>
+    </edge>
+    <edge source="Bulgaria" target="Liechtenstein">
+      <data key="d3">0.8560503538939289</data>
+    </edge>
+    <edge source="Bulgaria" target="Lithuania">
+      <data key="d3">0.7298167719975225</data>
+    </edge>
+    <edge source="Bulgaria" target="Marshall Islands">
+      <data key="d3">0.7314294791498578</data>
+    </edge>
+    <edge source="Bulgaria" target="Mongolia">
+      <data key="d3">0.9580937772456061</data>
+    </edge>
+    <edge source="Bulgaria" target="Poland">
+      <data key="d3">0.9663884430429113</data>
+    </edge>
+    <edge source="Bulgaria" target="Romania">
+      <data key="d3">0.7706579406913145</data>
+    </edge>
+    <edge source="Bulgaria" target="Russia">
+      <data key="d3">0.9745092285820581</data>
+    </edge>
+    <edge source="Bulgaria" target="Ukraine">
+      <data key="d3">0.9754616941958657</data>
+    </edge>
+    <edge source="Bulgaria" target="Vietnam">
+      <data key="d3">0.7422817920352707</data>
+    </edge>
+    <edge source="Burkina Faso" target="Niger">
+      <data key="d3">0.7164516428782992</data>
+    </edge>
+    <edge source="Burkina Faso" target="Yemen">
+      <data key="d3">0.8143129277489914</data>
+    </edge>
+    <edge source="Burundi" target="Guinea">
+      <data key="d3">0.7779800232250418</data>
+    </edge>
+    <edge source="Burundi" target="Kuwait">
+      <data key="d3">0.7338356620442588</data>
+    </edge>
+    <edge source="Burundi" target="Mali">
+      <data key="d3">0.7507134935136732</data>
+    </edge>
+    <edge source="Burundi" target="Mauritania">
+      <data key="d3">0.7209027780605147</data>
+    </edge>
+    <edge source="Burundi" target="Somalia">
+      <data key="d3">0.7389930788642707</data>
+    </edge>
+    <edge source="Burundi" target="Sudan">
+      <data key="d3">0.7458648162522183</data>
+    </edge>
+    <edge source="Burundi" target="Tanzania">
+      <data key="d3">0.7664791738523109</data>
+    </edge>
+    <edge source="Burundi" target="Uganda">
+      <data key="d3">0.7224109148275892</data>
+    </edge>
+    <edge source="Burundi" target="Yemen Arab Republic">
+      <data key="d3">0.7180487088230706</data>
+    </edge>
+    <edge source="Burundi" target="Yugoslavia">
+      <data key="d3">0.7228682348830772</data>
+    </edge>
+    <edge source="Burundi" target="Zambia">
+      <data key="d3">0.775739857650584</data>
+    </edge>
+    <edge source="Canada" target="Denmark">
+      <data key="d3">0.7685324056869266</data>
+    </edge>
+    <edge source="Canada" target="Estonia">
+      <data key="d3">0.9072296511343326</data>
+    </edge>
+    <edge source="Canada" target="German Federal Republic">
+      <data key="d3">0.8074881479639225</data>
+    </edge>
+    <edge source="Canada" target="Germany">
+      <data key="d3">0.8943558840232777</data>
+    </edge>
+    <edge source="Canada" target="Iceland">
+      <data key="d3">0.7730429120262925</data>
+    </edge>
+    <edge source="Canada" target="Ireland">
+      <data key="d3">0.7125338632993223</data>
+    </edge>
+    <edge source="Canada" target="Italy">
+      <data key="d3">0.8166294389753291</data>
+    </edge>
+    <edge source="Canada" target="Japan">
+      <data key="d3">0.7223307300036678</data>
+    </edge>
+    <edge source="Canada" target="Latvia">
+      <data key="d3">0.8247028336576132</data>
+    </edge>
+    <edge source="Canada" target="Liechtenstein">
+      <data key="d3">0.776106268776963</data>
+    </edge>
+    <edge source="Canada" target="Luxembourg">
+      <data key="d3">0.8205211804486842</data>
+    </edge>
+    <edge source="Canada" target="Netherlands">
+      <data key="d3">0.8254996073628903</data>
+    </edge>
+    <edge source="Canada" target="New Zealand">
+      <data key="d3">0.8111988321379354</data>
+    </edge>
+    <edge source="Canada" target="Norway">
+      <data key="d3">0.7744932839197458</data>
+    </edge>
+    <edge source="Canada" target="United Kingdom">
+      <data key="d3">0.7746008168519548</data>
+    </edge>
+    <edge source="Cape Verde" target="Ethiopia">
+      <data key="d3">0.7113861660745795</data>
+    </edge>
+    <edge source="Cape Verde" target="Guinea-Bissau">
+      <data key="d3">0.7767224555575478</data>
+    </edge>
+    <edge source="Cape Verde" target="Madagascar">
+      <data key="d3">0.716191459078857</data>
+    </edge>
+    <edge source="Cape Verde" target="Mozambique">
+      <data key="d3">0.7409932360072373</data>
+    </edge>
+    <edge source="Cape Verde" target="Sao Tome and Principe">
+      <data key="d3">0.7814403182297552</data>
+    </edge>
+    <edge source="Cape Verde" target="Seychelles">
+      <data key="d3">0.7771128591289658</data>
+    </edge>
+    <edge source="Cape Verde" target="Yemen People's Republic">
+      <data key="d3">0.7001688765663121</data>
+    </edge>
+    <edge source="Chad" target="Niger">
+      <data key="d3">0.7132342527537631</data>
+    </edge>
+    <edge source="Chile" target="Honduras">
+      <data key="d3">0.7169942361765007</data>
+    </edge>
+    <edge source="Chile" target="Paraguay">
+      <data key="d3">0.7069276445342535</data>
+    </edge>
+    <edge source="Colombia" target="Dominican Republic">
+      <data key="d3">0.7372886959756675</data>
+    </edge>
+    <edge source="Colombia" target="Honduras">
+      <data key="d3">0.7325097970286464</data>
+    </edge>
+    <edge source="Colombia" target="North Korea">
+      <data key="d3">0.7004041959724749</data>
+    </edge>
+    <edge source="Colombia" target="Panama">
+      <data key="d3">0.7157346779527055</data>
+    </edge>
+    <edge source="Colombia" target="Paraguay">
+      <data key="d3">0.7342196556013966</data>
+    </edge>
+    <edge source="Colombia" target="Peru">
+      <data key="d3">0.7174461248407731</data>
+    </edge>
+    <edge source="Colombia" target="Venezuela">
+      <data key="d3">0.7047960620404625</data>
+    </edge>
+    <edge source="Congo" target="Mozambique">
+      <data key="d3">0.7355349991877763</data>
+    </edge>
+    <edge source="Congo" target="Tanzania">
+      <data key="d3">0.7315037572934688</data>
+    </edge>
+    <edge source="Congo" target="Uganda">
+      <data key="d3">0.7179693668197649</data>
+    </edge>
+    <edge source="Congo" target="Yemen People's Republic">
+      <data key="d3">0.7633575248094226</data>
+    </edge>
+    <edge source="Costa Rica" target="Dominican Republic">
+      <data key="d3">0.7188146261305655</data>
+    </edge>
+    <edge source="Costa Rica" target="El Salvador">
+      <data key="d3">0.7450675033296282</data>
+    </edge>
+    <edge source="Costa Rica" target="Honduras">
+      <data key="d3">0.7478524572226811</data>
+    </edge>
+    <edge source="Costa Rica" target="Paraguay">
+      <data key="d3">0.7353755055011396</data>
+    </edge>
+    <edge source="Costa Rica" target="Uruguay">
+      <data key="d3">0.7261608721350978</data>
+    </edge>
+    <edge source="Cuba" target="Mongolia">
+      <data key="d3">0.753901139172536</data>
+    </edge>
+    <edge source="Cuba" target="Mozambique">
+      <data key="d3">0.7065496199366118</data>
+    </edge>
+    <edge source="Cuba" target="North Korea">
+      <data key="d3">0.891104922700543</data>
+    </edge>
+    <edge source="Cuba" target="Vietnam">
+      <data key="d3">0.8880087328202151</data>
+    </edge>
+    <edge source="Cuba" target="Yemen People's Republic">
+      <data key="d3">0.7843511975660211</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Estonia">
+      <data key="d3">0.89269912167461</data>
+    </edge>
+    <edge source="Czechoslovakia" target="German Democratic Republic">
+      <data key="d3">0.969150680407317</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Germany">
+      <data key="d3">0.867444636865281</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Hungary">
+      <data key="d3">0.9879114024874749</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Latvia">
+      <data key="d3">0.8828504279328546</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Liechtenstein">
+      <data key="d3">0.831064643723499</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Lithuania">
+      <data key="d3">0.7247402061853397</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Marshall Islands">
+      <data key="d3">0.7418216934084739</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Mongolia">
+      <data key="d3">0.953247243215541</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Poland">
+      <data key="d3">0.966637914743957</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Romania">
+      <data key="d3">0.7702870240576476</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Russia">
+      <data key="d3">0.9662217031542311</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Ukraine">
+      <data key="d3">0.966928130302005</data>
+    </edge>
+    <edge source="Czechoslovakia" target="Vietnam">
+      <data key="d3">0.732474752789941</data>
+    </edge>
+    <edge source="Denmark" target="Estonia">
+      <data key="d3">0.8990639424396301</data>
+    </edge>
+    <edge source="Denmark" target="Finland">
+      <data key="d3">0.7215534096475218</data>
+    </edge>
+    <edge source="Denmark" target="German Federal Republic">
+      <data key="d3">0.7135721608373878</data>
+    </edge>
+    <edge source="Denmark" target="Germany">
+      <data key="d3">0.8263845865264746</data>
+    </edge>
+    <edge source="Denmark" target="Iceland">
+      <data key="d3">0.8494008695464287</data>
+    </edge>
+    <edge source="Denmark" target="Ireland">
+      <data key="d3">0.8074199116422005</data>
+    </edge>
+    <edge source="Denmark" target="Italy">
+      <data key="d3">0.7334460740022457</data>
+    </edge>
+    <edge source="Denmark" target="Latvia">
+      <data key="d3">0.8912056487604423</data>
+    </edge>
+    <edge source="Denmark" target="Liechtenstein">
+      <data key="d3">0.8277861486385379</data>
+    </edge>
+    <edge source="Denmark" target="Lithuania">
+      <data key="d3">0.7453860156485421</data>
+    </edge>
+    <edge source="Denmark" target="Luxembourg">
+      <data key="d3">0.7162219839628471</data>
+    </edge>
+    <edge source="Denmark" target="Netherlands">
+      <data key="d3">0.7803026317964569</data>
+    </edge>
+    <edge source="Denmark" target="New Zealand">
+      <data key="d3">0.7623327484374961</data>
+    </edge>
+    <edge source="Denmark" target="Norway">
+      <data key="d3">0.9290617132786047</data>
+    </edge>
+    <edge source="Denmark" target="Sweden">
+      <data key="d3">0.8342673642662908</data>
+    </edge>
+    <edge source="Dominican Republic" target="El Salvador">
+      <data key="d3">0.7075288291497088</data>
+    </edge>
+    <edge source="Dominican Republic" target="Honduras">
+      <data key="d3">0.7545067295323306</data>
+    </edge>
+    <edge source="Dominican Republic" target="Nicaragua">
+      <data key="d3">0.7158557229173467</data>
+    </edge>
+    <edge source="Dominican Republic" target="Panama">
+      <data key="d3">0.7255068199834632</data>
+    </edge>
+    <edge source="Dominican Republic" target="Paraguay">
+      <data key="d3">0.737298371653591</data>
+    </edge>
+    <edge source="Dominican Republic" target="Peru">
+      <data key="d3">0.7010385251776468</data>
+    </edge>
+    <edge source="Ecuador" target="El Salvador">
+      <data key="d3">0.711998346030331</data>
+    </edge>
+    <edge source="Ecuador" target="Honduras">
+      <data key="d3">0.7089007619018949</data>
+    </edge>
+    <edge source="Ecuador" target="Panama">
+      <data key="d3">0.7175757414549894</data>
+    </edge>
+    <edge source="Ecuador" target="Peru">
+      <data key="d3">0.7489958697791422</data>
+    </edge>
+    <edge source="Ecuador" target="Venezuela">
+      <data key="d3">0.7404878085582604</data>
+    </edge>
+    <edge source="Egypt" target="Guinea">
+      <data key="d3">0.7626134667974189</data>
+    </edge>
+    <edge source="Egypt" target="Indonesia">
+      <data key="d3">0.7473989142033807</data>
+    </edge>
+    <edge source="Egypt" target="Iraq">
+      <data key="d3">0.768363386038034</data>
+    </edge>
+    <edge source="Egypt" target="Kuwait">
+      <data key="d3">0.7112976036416391</data>
+    </edge>
+    <edge source="Egypt" target="Mali">
+      <data key="d3">0.7576815964220198</data>
+    </edge>
+    <edge source="Egypt" target="Mauritania">
+      <data key="d3">0.7350771115427519</data>
+    </edge>
+    <edge source="Egypt" target="Morocco">
+      <data key="d3">0.7524557766681267</data>
+    </edge>
+    <edge source="Egypt" target="Oman">
+      <data key="d3">0.7088680170068945</data>
+    </edge>
+    <edge source="Egypt" target="Saudi Arabia">
+      <data key="d3">0.7835358715301599</data>
+    </edge>
+    <edge source="Egypt" target="Somalia">
+      <data key="d3">0.758125984122871</data>
+    </edge>
+    <edge source="Egypt" target="Sri Lanka">
+      <data key="d3">0.7193586953645068</data>
+    </edge>
+    <edge source="Egypt" target="Sudan">
+      <data key="d3">0.8329562090176172</data>
+    </edge>
+    <edge source="Egypt" target="Syria">
+      <data key="d3">0.7342021508675862</data>
+    </edge>
+    <edge source="Egypt" target="Yemen Arab Republic">
+      <data key="d3">0.8514791764095857</data>
+    </edge>
+    <edge source="El Salvador" target="Honduras">
+      <data key="d3">0.8002918752254952</data>
+    </edge>
+    <edge source="El Salvador" target="Paraguay">
+      <data key="d3">0.7518151873602911</data>
+    </edge>
+    <edge source="Estonia" target="Finland">
+      <data key="d3">0.9472836224519252</data>
+    </edge>
+    <edge source="Estonia" target="France">
+      <data key="d3">0.7997463121927302</data>
+    </edge>
+    <edge source="Estonia" target="Germany">
+      <data key="d3">0.8597161224125369</data>
+    </edge>
+    <edge source="Estonia" target="Greece">
+      <data key="d3">0.8175558367942626</data>
+    </edge>
+    <edge source="Estonia" target="Hungary">
+      <data key="d3">0.9239360313470985</data>
+    </edge>
+    <edge source="Estonia" target="Iceland">
+      <data key="d3">0.9289964491420799</data>
+    </edge>
+    <edge source="Estonia" target="Ireland">
+      <data key="d3">0.8901221641105346</data>
+    </edge>
+    <edge source="Estonia" target="Italy">
+      <data key="d3">0.8914731462002785</data>
+    </edge>
+    <edge source="Estonia" target="Japan">
+      <data key="d3">0.7857065084003708</data>
+    </edge>
+    <edge source="Estonia" target="Latvia">
+      <data key="d3">0.903913074402034</data>
+    </edge>
+    <edge source="Estonia" target="Liechtenstein">
+      <data key="d3">0.9046755152904312</data>
+    </edge>
+    <edge source="Estonia" target="Lithuania">
+      <data key="d3">0.7331923854232668</data>
+    </edge>
+    <edge source="Estonia" target="Luxembourg">
+      <data key="d3">0.8914731462002785</data>
+    </edge>
+    <edge source="Estonia" target="Netherlands">
+      <data key="d3">0.8854592728065893</data>
+    </edge>
+    <edge source="Estonia" target="New Zealand">
+      <data key="d3">0.8608948631126008</data>
+    </edge>
+    <edge source="Estonia" target="Norway">
+      <data key="d3">0.915274081119678</data>
+    </edge>
+    <edge source="Estonia" target="Poland">
+      <data key="d3">0.875330103516972</data>
+    </edge>
+    <edge source="Estonia" target="Portugal">
+      <data key="d3">0.8811727929058656</data>
+    </edge>
+    <edge source="Estonia" target="Romania">
+      <data key="d3">0.8644304709433315</data>
+    </edge>
+    <edge source="Estonia" target="Spain">
+      <data key="d3">0.7497643540806087</data>
+    </edge>
+    <edge source="Estonia" target="Sweden">
+      <data key="d3">0.9114920498152024</data>
+    </edge>
+    <edge source="Estonia" target="United Kingdom">
+      <data key="d3">0.7989667863570181</data>
+    </edge>
+    <edge source="Ethiopia" target="Mozambique">
+      <data key="d3">0.7677097454960901</data>
+    </edge>
+    <edge source="Ethiopia" target="Seychelles">
+      <data key="d3">0.7517570082662866</data>
+    </edge>
+    <edge source="Ethiopia" target="Vietnam">
+      <data key="d3">0.7191562612626199</data>
+    </edge>
+    <edge source="Federated States of Micronesia" target="Malta">
+      <data key="d3">0.7971558562837376</data>
+    </edge>
+    <edge source="Federated States of Micronesia" target="Marshall Islands">
+      <data key="d3">0.7278349496784043</data>
+    </edge>
+    <edge source="Federated States of Micronesia" target="Samoa">
+      <data key="d3">0.7765151515151515</data>
+    </edge>
+    <edge source="Federated States of Micronesia" target="Solomon Islands">
+      <data key="d3">0.723746864455746</data>
+    </edge>
+    <edge source="Finland" target="Germany">
+      <data key="d3">0.7798469259591093</data>
+    </edge>
+    <edge source="Finland" target="Latvia">
+      <data key="d3">0.9033790918690602</data>
+    </edge>
+    <edge source="Finland" target="Liechtenstein">
+      <data key="d3">0.8281451605098358</data>
+    </edge>
+    <edge source="Finland" target="Lithuania">
+      <data key="d3">0.7205594654481086</data>
+    </edge>
+    <edge source="Finland" target="Norway">
+      <data key="d3">0.7259270533123053</data>
+    </edge>
+    <edge source="Finland" target="Sweden">
+      <data key="d3">0.8506754814144417</data>
+    </edge>
+    <edge source="France" target="German Federal Republic">
+      <data key="d3">0.7945472687743569</data>
+    </edge>
+    <edge source="France" target="Germany">
+      <data key="d3">0.8047657163019413</data>
+    </edge>
+    <edge source="France" target="Italy">
+      <data key="d3">0.7523693806301125</data>
+    </edge>
+    <edge source="France" target="Latvia">
+      <data key="d3">0.7427131768496908</data>
+    </edge>
+    <edge source="France" target="Luxembourg">
+      <data key="d3">0.7639591520666134</data>
+    </edge>
+    <edge source="France" target="Netherlands">
+      <data key="d3">0.706565746334736</data>
+    </edge>
+    <edge source="France" target="United Kingdom">
+      <data key="d3">0.7575100279609165</data>
+    </edge>
+    <edge source="Gabon" target="Niger">
+      <data key="d3">0.7237045505345371</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Hungary">
+      <data key="d3">0.963447647260027</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Mongolia">
+      <data key="d3">0.9750963587712402</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Poland">
+      <data key="d3">0.9384300107957162</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Russia">
+      <data key="d3">0.9758431670052989</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Ukraine">
+      <data key="d3">0.977960188552</data>
+    </edge>
+    <edge source="German Democratic Republic" target="Vietnam">
+      <data key="d3">0.8147524918112379</data>
+    </edge>
+    <edge source="German Federal Republic" target="Italy">
+      <data key="d3">0.8550898254379065</data>
+    </edge>
+    <edge source="German Federal Republic" target="Japan">
+      <data key="d3">0.7231361684463444</data>
+    </edge>
+    <edge source="German Federal Republic" target="Luxembourg">
+      <data key="d3">0.8898378989174203</data>
+    </edge>
+    <edge source="German Federal Republic" target="Netherlands">
+      <data key="d3">0.8367464059835796</data>
+    </edge>
+    <edge source="German Federal Republic" target="New Zealand">
+      <data key="d3">0.7058534603058648</data>
+    </edge>
+    <edge source="German Federal Republic" target="United Kingdom">
+      <data key="d3">0.8790632216856659</data>
+    </edge>
+    <edge source="Germany" target="Greece">
+      <data key="d3">0.7839006878461069</data>
+    </edge>
+    <edge source="Germany" target="Hungary">
+      <data key="d3">0.8079612249836144</data>
+    </edge>
+    <edge source="Germany" target="Iceland">
+      <data key="d3">0.848152392226088</data>
+    </edge>
+    <edge source="Germany" target="Ireland">
+      <data key="d3">0.7543142159270249</data>
+    </edge>
+    <edge source="Germany" target="Italy">
+      <data key="d3">0.9307299472561764</data>
+    </edge>
+    <edge source="Germany" target="Japan">
+      <data key="d3">0.8369322127192155</data>
+    </edge>
+    <edge source="Germany" target="Latvia">
+      <data key="d3">0.8425781505657857</data>
+    </edge>
+    <edge source="Germany" target="Liechtenstein">
+      <data key="d3">0.7827314867131868</data>
+    </edge>
+    <edge source="Germany" target="Luxembourg">
+      <data key="d3">0.9566783963506106</data>
+    </edge>
+    <edge source="Germany" target="Netherlands">
+      <data key="d3">0.9678516439468116</data>
+    </edge>
+    <edge source="Germany" target="New Zealand">
+      <data key="d3">0.7498397277901352</data>
+    </edge>
+    <edge source="Germany" target="Norway">
+      <data key="d3">0.8446548794339205</data>
+    </edge>
+    <edge source="Germany" target="Poland">
+      <data key="d3">0.8294473299714836</data>
+    </edge>
+    <edge source="Germany" target="Portugal">
+      <data key="d3">0.9019740681395614</data>
+    </edge>
+    <edge source="Germany" target="Romania">
+      <data key="d3">0.8191634774169413</data>
+    </edge>
+    <edge source="Germany" target="Spain">
+      <data key="d3">0.8110403972201707</data>
+    </edge>
+    <edge source="Germany" target="Sweden">
+      <data key="d3">0.7374321408597663</data>
+    </edge>
+    <edge source="Germany" target="United Kingdom">
+      <data key="d3">0.877352708021234</data>
+    </edge>
+    <edge source="Greece" target="Latvia">
+      <data key="d3">0.8726028707451611</data>
+    </edge>
+    <edge source="Greece" target="Liechtenstein">
+      <data key="d3">0.7498623594739525</data>
+    </edge>
+    <edge source="Greece" target="Lithuania">
+      <data key="d3">0.7416760316926425</data>
+    </edge>
+    <edge source="Grenada" target="St. Kitts and Nevis">
+      <data key="d3">0.7432217084100663</data>
+    </edge>
+    <edge source="Guatemala" target="Honduras">
+      <data key="d3">0.7061714371848556</data>
+    </edge>
+    <edge source="Guatemala" target="Uruguay">
+      <data key="d3">0.7089880049572663</data>
+    </edge>
+    <edge source="Guinea" target="Iraq">
+      <data key="d3">0.7664970749120005</data>
+    </edge>
+    <edge source="Guinea" target="Kuwait">
+      <data key="d3">0.7002464790125691</data>
+    </edge>
+    <edge source="Guinea" target="Mali">
+      <data key="d3">0.853746402071862</data>
+    </edge>
+    <edge source="Guinea" target="Mauritania">
+      <data key="d3">0.7047464505042743</data>
+    </edge>
+    <edge source="Guinea" target="Sudan">
+      <data key="d3">0.7528828599897966</data>
+    </edge>
+    <edge source="Guinea" target="Tanzania">
+      <data key="d3">0.7591435461760453</data>
+    </edge>
+    <edge source="Guinea" target="Yemen Arab Republic">
+      <data key="d3">0.7710738877364828</data>
+    </edge>
+    <edge source="Guinea" target="Yugoslavia">
+      <data key="d3">0.8087269080675321</data>
+    </edge>
+    <edge source="Guinea" target="Zambia">
+      <data key="d3">0.7402281098664</data>
+    </edge>
+    <edge source="Guinea-Bissau" target="Sao Tome and Principe">
+      <data key="d3">0.7709877808424412</data>
+    </edge>
+    <edge source="Haiti" target="Honduras">
+      <data key="d3">0.7121292240120695</data>
+    </edge>
+    <edge source="Haiti" target="Philippines">
+      <data key="d3">0.7088081013322219</data>
+    </edge>
+    <edge source="Honduras" target="Nicaragua">
+      <data key="d3">0.7044319413677104</data>
+    </edge>
+    <edge source="Honduras" target="Panama">
+      <data key="d3">0.7326686331661462</data>
+    </edge>
+    <edge source="Honduras" target="Paraguay">
+      <data key="d3">0.7963931779830467</data>
+    </edge>
+    <edge source="Honduras" target="Uruguay">
+      <data key="d3">0.7395760201998558</data>
+    </edge>
+    <edge source="Hungary" target="Latvia">
+      <data key="d3">0.9191316169068425</data>
+    </edge>
+    <edge source="Hungary" target="Liechtenstein">
+      <data key="d3">0.8748149754083736</data>
+    </edge>
+    <edge source="Hungary" target="Lithuania">
+      <data key="d3">0.7339244112727946</data>
+    </edge>
+    <edge source="Hungary" target="Marshall Islands">
+      <data key="d3">0.722921033322645</data>
+    </edge>
+    <edge source="Hungary" target="Mongolia">
+      <data key="d3">0.9526271967338279</data>
+    </edge>
+    <edge source="Hungary" target="Poland">
+      <data key="d3">0.9627979043665622</data>
+    </edge>
+    <edge source="Hungary" target="Romania">
+      <data key="d3">0.7648485651145724</data>
+    </edge>
+    <edge source="Hungary" target="Russia">
+      <data key="d3">0.9659433024726105</data>
+    </edge>
+    <edge source="Hungary" target="Ukraine">
+      <data key="d3">0.9665653893172187</data>
+    </edge>
+    <edge source="Hungary" target="Vietnam">
+      <data key="d3">0.7336820640363129</data>
+    </edge>
+    <edge source="Iceland" target="Ireland">
+      <data key="d3">0.7657386441806665</data>
+    </edge>
+    <edge source="Iceland" target="Italy">
+      <data key="d3">0.7458048506302354</data>
+    </edge>
+    <edge source="Iceland" target="Latvia">
+      <data key="d3">0.9195787790483105</data>
+    </edge>
+    <edge source="Iceland" target="Liechtenstein">
+      <data key="d3">0.8514249404439135</data>
+    </edge>
+    <edge source="Iceland" target="Lithuania">
+      <data key="d3">0.780351077704069</data>
+    </edge>
+    <edge source="Iceland" target="Luxembourg">
+      <data key="d3">0.7251192214741564</data>
+    </edge>
+    <edge source="Iceland" target="Netherlands">
+      <data key="d3">0.7709107385434892</data>
+    </edge>
+    <edge source="Iceland" target="New Zealand">
+      <data key="d3">0.7752861872348406</data>
+    </edge>
+    <edge source="Iceland" target="Norway">
+      <data key="d3">0.8704602038749569</data>
+    </edge>
+    <edge source="Iceland" target="Sweden">
+      <data key="d3">0.7518208976027245</data>
+    </edge>
+    <edge source="Indonesia" target="Morocco">
+      <data key="d3">0.7496439607362784</data>
+    </edge>
+    <edge source="Indonesia" target="North Korea">
+      <data key="d3">0.9468641529479985</data>
+    </edge>
+    <edge source="Indonesia" target="Saudi Arabia">
+      <data key="d3">0.7088657557572396</data>
+    </edge>
+    <edge source="Indonesia" target="Sri Lanka">
+      <data key="d3">0.7068587356088432</data>
+    </edge>
+    <edge source="Indonesia" target="Yemen">
+      <data key="d3">0.9107077248809252</data>
+    </edge>
+    <edge source="Indonesia" target="Yemen Arab Republic">
+      <data key="d3">0.7220541567227292</data>
+    </edge>
+    <edge source="Indonesia" target="Yugoslavia">
+      <data key="d3">0.7199063533384042</data>
+    </edge>
+    <edge source="Iran" target="North Korea">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="Iran" target="Yemen">
+      <data key="d3">0.8931003153804907</data>
+    </edge>
+    <edge source="Iraq" target="Libya">
+      <data key="d3">0.7532154483673464</data>
+    </edge>
+    <edge source="Iraq" target="Mali">
+      <data key="d3">0.7312407308360784</data>
+    </edge>
+    <edge source="Iraq" target="Saudi Arabia">
+      <data key="d3">0.705125974980228</data>
+    </edge>
+    <edge source="Iraq" target="Sudan">
+      <data key="d3">0.7181059214303739</data>
+    </edge>
+    <edge source="Iraq" target="Syria">
+      <data key="d3">0.8367859462588995</data>
+    </edge>
+    <edge source="Iraq" target="Yemen Arab Republic">
+      <data key="d3">0.8260519693481603</data>
+    </edge>
+    <edge source="Iraq" target="Yemen People's Republic">
+      <data key="d3">0.7614820499548945</data>
+    </edge>
+    <edge source="Ireland" target="Italy">
+      <data key="d3">0.7075266959112626</data>
+    </edge>
+    <edge source="Ireland" target="Latvia">
+      <data key="d3">0.888816650514079</data>
+    </edge>
+    <edge source="Ireland" target="Liechtenstein">
+      <data key="d3">0.8459131516012828</data>
+    </edge>
+    <edge source="Ireland" target="Luxembourg">
+      <data key="d3">0.7065111504608838</data>
+    </edge>
+    <edge source="Ireland" target="Netherlands">
+      <data key="d3">0.718817154793107</data>
+    </edge>
+    <edge source="Ireland" target="New Zealand">
+      <data key="d3">0.7344988952046886</data>
+    </edge>
+    <edge source="Ireland" target="Norway">
+      <data key="d3">0.7762009792182742</data>
+    </edge>
+    <edge source="Ireland" target="Sweden">
+      <data key="d3">0.7674851556576219</data>
+    </edge>
+    <edge source="Italy" target="Japan">
+      <data key="d3">0.7392277543238059</data>
+    </edge>
+    <edge source="Italy" target="Latvia">
+      <data key="d3">0.8690094567160908</data>
+    </edge>
+    <edge source="Italy" target="Liechtenstein">
+      <data key="d3">0.7840452135935535</data>
+    </edge>
+    <edge source="Italy" target="Lithuania">
+      <data key="d3">0.7001400420140048</data>
+    </edge>
+    <edge source="Italy" target="Luxembourg">
+      <data key="d3">0.9077350974303012</data>
+    </edge>
+    <edge source="Italy" target="Netherlands">
+      <data key="d3">0.8780492797216665</data>
+    </edge>
+    <edge source="Italy" target="New Zealand">
+      <data key="d3">0.7562495000130857</data>
+    </edge>
+    <edge source="Italy" target="Norway">
+      <data key="d3">0.7331162249471563</data>
+    </edge>
+    <edge source="Italy" target="Taiwan">
+      <data key="d3">0.7388314231517575</data>
+    </edge>
+    <edge source="Italy" target="United Kingdom">
+      <data key="d3">0.7955123632770001</data>
+    </edge>
+    <edge source="Japan" target="Latvia">
+      <data key="d3">0.8511873562707514</data>
+    </edge>
+    <edge source="Japan" target="Liechtenstein">
+      <data key="d3">0.7077187176726606</data>
+    </edge>
+    <edge source="Japan" target="Luxembourg">
+      <data key="d3">0.741717960242995</data>
+    </edge>
+    <edge source="Japan" target="Netherlands">
+      <data key="d3">0.7275172898027159</data>
+    </edge>
+    <edge source="Japan" target="New Zealand">
+      <data key="d3">0.7140935397428875</data>
+    </edge>
+    <edge source="Jordan" target="Lebanon">
+      <data key="d3">0.7578142396411586</data>
+    </edge>
+    <edge source="Jordan" target="Oman">
+      <data key="d3">0.7591881130242942</data>
+    </edge>
+    <edge source="Jordan" target="Qatar">
+      <data key="d3">0.7122545260240369</data>
+    </edge>
+    <edge source="Jordan" target="Saudi Arabia">
+      <data key="d3">0.773571009053872</data>
+    </edge>
+    <edge source="Jordan" target="Yemen">
+      <data key="d3">0.9107077248809256</data>
+    </edge>
+    <edge source="Kenya" target="North Korea">
+      <data key="d3">0.7001400420140049</data>
+    </edge>
+    <edge source="Kuwait" target="Mauritania">
+      <data key="d3">0.7228476962357627</data>
+    </edge>
+    <edge source="Kuwait" target="Qatar">
+      <data key="d3">0.7587256735867386</data>
+    </edge>
+    <edge source="Kuwait" target="Somalia">
+      <data key="d3">0.726060181587949</data>
+    </edge>
+    <edge source="Kuwait" target="Sudan">
+      <data key="d3">0.7689526805448028</data>
+    </edge>
+    <edge source="Kuwait" target="Tanzania">
+      <data key="d3">0.7199551497594874</data>
+    </edge>
+    <edge source="Kuwait" target="United Arab Emirates">
+      <data key="d3">0.8438525756525564</data>
+    </edge>
+    <edge source="Kuwait" target="Yemen Arab Republic">
+      <data key="d3">0.7778993596778654</data>
+    </edge>
+    <edge source="Kuwait" target="Yugoslavia">
+      <data key="d3">0.7110913045968122</data>
+    </edge>
+    <edge source="Kuwait" target="Zambia">
+      <data key="d3">0.7175417381226881</data>
+    </edge>
+    <edge source="Laos" target="Mozambique">
+      <data key="d3">0.7760710400558779</data>
+    </edge>
+    <edge source="Laos" target="North Korea">
+      <data key="d3">0.8087571021725036</data>
+    </edge>
+    <edge source="Laos" target="Seychelles">
+      <data key="d3">0.7375615734876563</data>
+    </edge>
+    <edge source="Laos" target="Vietnam">
+      <data key="d3">0.9595820862344077</data>
+    </edge>
+    <edge source="Latvia" target="Liechtenstein">
+      <data key="d3">0.9169616438567275</data>
+    </edge>
+    <edge source="Latvia" target="Lithuania">
+      <data key="d3">0.8160721024485806</data>
+    </edge>
+    <edge source="Latvia" target="Luxembourg">
+      <data key="d3">0.8913347385408392</data>
+    </edge>
+    <edge source="Latvia" target="Malta">
+      <data key="d3">0.7029802124884412</data>
+    </edge>
+    <edge source="Latvia" target="Netherlands">
+      <data key="d3">0.871875931632988</data>
+    </edge>
+    <edge source="Latvia" target="New Zealand">
+      <data key="d3">0.8476499189627227</data>
+    </edge>
+    <edge source="Latvia" target="Norway">
+      <data key="d3">0.8905611281371414</data>
+    </edge>
+    <edge source="Latvia" target="Panama">
+      <data key="d3">0.7913710348401468</data>
+    </edge>
+    <edge source="Latvia" target="Poland">
+      <data key="d3">0.8841014008531738</data>
+    </edge>
+    <edge source="Latvia" target="Portugal">
+      <data key="d3">0.9195787790483108</data>
+    </edge>
+    <edge source="Latvia" target="Romania">
+      <data key="d3">0.8888370055341127</data>
+    </edge>
+    <edge source="Latvia" target="Spain">
+      <data key="d3">0.8161743863191805</data>
+    </edge>
+    <edge source="Latvia" target="Sweden">
+      <data key="d3">0.9046898130864762</data>
+    </edge>
+    <edge source="Latvia" target="United Kingdom">
+      <data key="d3">0.7432147538715808</data>
+    </edge>
+    <edge source="Lebanon" target="Saudi Arabia">
+      <data key="d3">0.7525087990859185</data>
+    </edge>
+    <edge source="Lebanon" target="Yemen">
+      <data key="d3">0.7220494175211181</data>
+    </edge>
+    <edge source="Libya" target="North Korea">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="Libya" target="Syria">
+      <data key="d3">0.7864970610646653</data>
+    </edge>
+    <edge source="Libya" target="Yemen">
+      <data key="d3">0.8145882438193183</data>
+    </edge>
+    <edge source="Libya" target="Yemen Arab Republic">
+      <data key="d3">0.7159409648686514</data>
+    </edge>
+    <edge source="Libya" target="Yemen People's Republic">
+      <data key="d3">0.7948125663759623</data>
+    </edge>
+    <edge source="Liechtenstein" target="Lithuania">
+      <data key="d3">0.7641567140184408</data>
+    </edge>
+    <edge source="Liechtenstein" target="Luxembourg">
+      <data key="d3">0.8034735225616209</data>
+    </edge>
+    <edge source="Liechtenstein" target="Netherlands">
+      <data key="d3">0.7988197636252672</data>
+    </edge>
+    <edge source="Liechtenstein" target="New Zealand">
+      <data key="d3">0.779493014555868</data>
+    </edge>
+    <edge source="Liechtenstein" target="Norway">
+      <data key="d3">0.8466706667404852</data>
+    </edge>
+    <edge source="Liechtenstein" target="Poland">
+      <data key="d3">0.8215026278494632</data>
+    </edge>
+    <edge source="Liechtenstein" target="Portugal">
+      <data key="d3">0.8046611620860894</data>
+    </edge>
+    <edge source="Liechtenstein" target="Romania">
+      <data key="d3">0.8329249802708824</data>
+    </edge>
+    <edge source="Liechtenstein" target="South Korea">
+      <data key="d3">0.70677231497584</data>
+    </edge>
+    <edge source="Liechtenstein" target="Spain">
+      <data key="d3">0.7200509247828648</data>
+    </edge>
+    <edge source="Liechtenstein" target="Sweden">
+      <data key="d3">0.8535131853058594</data>
+    </edge>
+    <edge source="Lithuania" target="Luxembourg">
+      <data key="d3">0.7261317091416546</data>
+    </edge>
+    <edge source="Lithuania" target="Netherlands">
+      <data key="d3">0.7128871995502094</data>
+    </edge>
+    <edge source="Lithuania" target="Norway">
+      <data key="d3">0.7579675934754828</data>
+    </edge>
+    <edge source="Lithuania" target="Poland">
+      <data key="d3">0.711500905263933</data>
+    </edge>
+    <edge source="Lithuania" target="Portugal">
+      <data key="d3">0.7363960038115462</data>
+    </edge>
+    <edge source="Lithuania" target="Romania">
+      <data key="d3">0.7661978730362013</data>
+    </edge>
+    <edge source="Lithuania" target="Sweden">
+      <data key="d3">0.735600537368825</data>
+    </edge>
+    <edge source="Luxembourg" target="Netherlands">
+      <data key="d3">0.8921547124566241</data>
+    </edge>
+    <edge source="Luxembourg" target="New Zealand">
+      <data key="d3">0.779646967501403</data>
+    </edge>
+    <edge source="Luxembourg" target="Norway">
+      <data key="d3">0.7081745470951271</data>
+    </edge>
+    <edge source="Luxembourg" target="Portugal">
+      <data key="d3">0.7054067728774988</data>
+    </edge>
+    <edge source="Luxembourg" target="United Kingdom">
+      <data key="d3">0.8151858161246053</data>
+    </edge>
+    <edge source="Madagascar" target="Seychelles">
+      <data key="d3">0.7156930704279307</data>
+    </edge>
+    <edge source="Malaysia" target="North Korea">
+      <data key="d3">0.8605614665646196</data>
+    </edge>
+    <edge source="Malaysia" target="Thailand">
+      <data key="d3">0.7056459229412149</data>
+    </edge>
+    <edge source="Malaysia" target="Yemen">
+      <data key="d3">0.8270142180094789</data>
+    </edge>
+    <edge source="Maldives" target="North Korea">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="Maldives" target="Yemen">
+      <data key="d3">0.8146402624721252</data>
+    </edge>
+    <edge source="Mali" target="Mauritania">
+      <data key="d3">0.7242522036607894</data>
+    </edge>
+    <edge source="Mali" target="Sudan">
+      <data key="d3">0.7456247186451904</data>
+    </edge>
+    <edge source="Mali" target="Tanzania">
+      <data key="d3">0.7626487380747125</data>
+    </edge>
+    <edge source="Mali" target="Uganda">
+      <data key="d3">0.7166823111925342</data>
+    </edge>
+    <edge source="Mali" target="Yemen">
+      <data key="d3">0.8144444966089956</data>
+    </edge>
+    <edge source="Mali" target="Yemen Arab Republic">
+      <data key="d3">0.7781598794524122</data>
+    </edge>
+    <edge source="Mali" target="Yugoslavia">
+      <data key="d3">0.797540732407188</data>
+    </edge>
+    <edge source="Mali" target="Zambia">
+      <data key="d3">0.7440301029051348</data>
+    </edge>
+    <edge source="Marshall Islands" target="Portugal">
+      <data key="d3">0.7050442387827709</data>
+    </edge>
+    <edge source="Marshall Islands" target="Romania">
+      <data key="d3">0.7605473865358453</data>
+    </edge>
+    <edge source="Marshall Islands" target="Samoa">
+      <data key="d3">0.837245717908944</data>
+    </edge>
+    <edge source="Marshall Islands" target="Spain">
+      <data key="d3">0.7171804696775815</data>
+    </edge>
+    <edge source="Mauritania" target="North Korea">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="Mauritania" target="Somalia">
+      <data key="d3">0.7413417100975763</data>
+    </edge>
+    <edge source="Mauritania" target="Sudan">
+      <data key="d3">0.7266336427692257</data>
+    </edge>
+    <edge source="Mauritania" target="Tanzania">
+      <data key="d3">0.7141942291485607</data>
+    </edge>
+    <edge source="Mauritania" target="Yemen">
+      <data key="d3">0.8146146122025233</data>
+    </edge>
+    <edge source="Mauritania" target="Yemen Arab Republic">
+      <data key="d3">0.7252471133272899</data>
+    </edge>
+    <edge source="Mauritania" target="Zambia">
+      <data key="d3">0.7056425466529301</data>
+    </edge>
+    <edge source="Mexico" target="North Korea">
+      <data key="d3">0.700528900717694</data>
+    </edge>
+    <edge source="Mexico" target="Venezuela">
+      <data key="d3">0.7190468107085655</data>
+    </edge>
+    <edge source="Mongolia" target="Poland">
+      <data key="d3">0.9311278116296401</data>
+    </edge>
+    <edge source="Mongolia" target="Russia">
+      <data key="d3">0.978245118868149</data>
+    </edge>
+    <edge source="Mongolia" target="Seychelles">
+      <data key="d3">0.7147451202730587</data>
+    </edge>
+    <edge source="Mongolia" target="Ukraine">
+      <data key="d3">0.9834363295594458</data>
+    </edge>
+    <edge source="Mongolia" target="Vietnam">
+      <data key="d3">0.8632053941190737</data>
+    </edge>
+    <edge source="Morocco" target="Sudan">
+      <data key="d3">0.7131123565856547</data>
+    </edge>
+    <edge source="Morocco" target="Tunisia">
+      <data key="d3">0.7022196734767063</data>
+    </edge>
+    <edge source="Mozambique" target="Sao Tome and Principe">
+      <data key="d3">0.7899400865978635</data>
+    </edge>
+    <edge source="Mozambique" target="Seychelles">
+      <data key="d3">0.7806893277480459</data>
+    </edge>
+    <edge source="Mozambique" target="Vietnam">
+      <data key="d3">0.7938952703719053</data>
+    </edge>
+    <edge source="Mozambique" target="Yemen People's Republic">
+      <data key="d3">0.8437335455161512</data>
+    </edge>
+    <edge source="Myanmar" target="Nepal">
+      <data key="d3">0.7163669038593612</data>
+    </edge>
+    <edge source="Myanmar" target="North Korea">
+      <data key="d3">0.7001400420140048</data>
+    </edge>
+    <edge source="Myanmar" target="Sri Lanka">
+      <data key="d3">0.7041362196302481</data>
+    </edge>
+    <edge source="Namibia" target="North Korea">
+      <data key="d3">0.700528900717694</data>
+    </edge>
+    <edge source="Namibia" target="Philippines">
+      <data key="d3">0.7463894551386494</data>
+    </edge>
+    <edge source="Namibia" target="Uganda">
+      <data key="d3">0.7839046829854712</data>
+    </edge>
+    <edge source="Namibia" target="Zimbabwe">
+      <data key="d3">0.7841638856908277</data>
+    </edge>
+    <edge source="Netherlands" target="New Zealand">
+      <data key="d3">0.7970395228542839</data>
+    </edge>
+    <edge source="Netherlands" target="Norway">
+      <data key="d3">0.7689395833326612</data>
+    </edge>
+    <edge source="Netherlands" target="United Kingdom">
+      <data key="d3">0.8007302921245042</data>
+    </edge>
+    <edge source="New Zealand" target="Norway">
+      <data key="d3">0.7708191496574789</data>
+    </edge>
+    <edge source="New Zealand" target="United Kingdom">
+      <data key="d3">0.7020659242054536</data>
+    </edge>
+    <edge source="Nicaragua" target="Panama">
+      <data key="d3">0.7003467371226076</data>
+    </edge>
+    <edge source="Nicaragua" target="Paraguay">
+      <data key="d3">0.7135384790633298</data>
+    </edge>
+    <edge source="Nigeria" target="Somalia">
+      <data key="d3">0.7323455892510574</data>
+    </edge>
+    <edge source="North Korea" target="Pakistan">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="North Korea" target="Philippines">
+      <data key="d3">0.7002746713858895</data>
+    </edge>
+    <edge source="North Korea" target="Qatar">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="North Korea" target="Saudi Arabia">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="North Korea" target="Somalia">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="North Korea" target="Sri Lanka">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="North Korea" target="Sudan">
+      <data key="d3">0.8597269536210952</data>
+    </edge>
+    <edge source="North Korea" target="Syria">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="North Korea" target="Tanzania">
+      <data key="d3">0.7004041959724749</data>
+    </edge>
+    <edge source="North Korea" target="Trinidad and Tobago">
+      <data key="d3">0.700528900717694</data>
+    </edge>
+    <edge source="North Korea" target="Uganda">
+      <data key="d3">0.9999999999999999</data>
+    </edge>
+    <edge source="North Korea" target="United Arab Emirates">
+      <data key="d3">0.7005289007176941</data>
+    </edge>
+    <edge source="North Korea" target="Vietnam">
+      <data key="d3">0.9468641529479985</data>
+    </edge>
+    <edge source="North Korea" target="Zimbabwe">
+      <data key="d3">1.0</data>
+    </edge>
+    <edge source="Norway" target="Sweden">
+      <data key="d3">0.8441724263122431</data>
+    </edge>
+    <edge source="Oman" target="Qatar">
+      <data key="d3">0.7432652010259269</data>
+    </edge>
+    <edge source="Oman" target="Saudi Arabia">
+      <data key="d3">0.7435642320687972</data>
+    </edge>
+    <edge source="Oman" target="United Arab Emirates">
+      <data key="d3">0.7125226184848027</data>
+    </edge>
+    <edge source="Pakistan" target="Yemen">
+      <data key="d3">0.814640262472125</data>
+    </edge>
+    <edge source="Panama" target="Paraguay">
+      <data key="d3">0.7245396986344455</data>
+    </edge>
+    <edge source="Panama" target="Peru">
+      <data key="d3">0.7051930229602372</data>
+    </edge>
+    <edge source="Paraguay" target="Uruguay">
+      <data key="d3">0.7321977375493157</data>
+    </edge>
+    <edge source="Peru" target="Venezuela">
+      <data key="d3">0.705726622472906</data>
+    </edge>
+    <edge source="Philippines" target="Thailand">
+      <data key="d3">0.7807938151172328</data>
+    </edge>
+    <edge source="Poland" target="Romania">
+      <data key="d3">0.7696124450597929</data>
+    </edge>
+    <edge source="Poland" target="Russia">
+      <data key="d3">0.9518207204038054</data>
+    </edge>
+    <edge source="Poland" target="Ukraine">
+      <data key="d3">0.9538997552357897</data>
+    </edge>
+    <edge source="Poland" target="Vietnam">
+      <data key="d3">0.7062385691703406</data>
+    </edge>
+    <edge source="Portugal" target="South Africa">
+      <data key="d3">0.8157237149258898</data>
+    </edge>
+    <edge source="Qatar" target="Saudi Arabia">
+      <data key="d3">0.7505585539718177</data>
+    </edge>
+    <edge source="Qatar" target="United Arab Emirates">
+      <data key="d3">0.8489287846134277</data>
+    </edge>
+    <edge source="Qatar" target="Yemen">
+      <data key="d3">0.814640262472125</data>
+    </edge>
+    <edge source="Romania" target="Russia">
+      <data key="d3">0.7407327830970296</data>
+    </edge>
+    <edge source="Romania" target="Ukraine">
+      <data key="d3">0.7394573851267854</data>
+    </edge>
+    <edge source="Russia" target="Ukraine">
+      <data key="d3">0.9938511523885919</data>
+    </edge>
+    <edge source="Russia" target="Vietnam">
+      <data key="d3">0.7960745004444647</data>
+    </edge>
+    <edge source="Rwanda" target="Togo">
+      <data key="d3">0.7236971528010627</data>
+    </edge>
+    <edge source="Sao Tome and Principe" target="Seychelles">
+      <data key="d3">0.7786118455944336</data>
+    </edge>
+    <edge source="Saudi Arabia" target="Yemen">
+      <data key="d3">0.8146146122025233</data>
+    </edge>
+    <edge source="Saudi Arabia" target="Yemen Arab Republic">
+      <data key="d3">0.7706289777042739</data>
+    </edge>
+    <edge source="Seychelles" target="Vietnam">
+      <data key="d3">0.7281336760276307</data>
+    </edge>
+    <edge source="Seychelles" target="Yemen People's Republic">
+      <data key="d3">0.7907079326067985</data>
+    </edge>
+    <edge source="Somalia" target="Sudan">
+      <data key="d3">0.7960979327416701</data>
+    </edge>
+    <edge source="Somalia" target="Tanzania">
+      <data key="d3">0.733864016108618</data>
+    </edge>
+    <edge source="Somalia" target="Yemen">
+      <data key="d3">0.8929940258315158</data>
+    </edge>
+    <edge source="Somalia" target="Yemen Arab Republic">
+      <data key="d3">0.739632288869047</data>
+    </edge>
+    <edge source="Somalia" target="Zambia">
+      <data key="d3">0.7191163941630779</data>
+    </edge>
+    <edge source="South Africa" target="United Kingdom">
+      <data key="d3">0.7082350078377462</data>
+    </edge>
+    <edge source="South Korea" target="Spain">
+      <data key="d3">0.7109902447535141</data>
+    </edge>
+    <edge source="Sri Lanka" target="Sudan">
+      <data key="d3">0.724045317900322</data>
+    </edge>
+    <edge source="Sri Lanka" target="Yemen">
+      <data key="d3">0.8146146122025233</data>
+    </edge>
+    <edge source="Sri Lanka" target="Yemen Arab Republic">
+      <data key="d3">0.7000452846331089</data>
+    </edge>
+    <edge source="Sri Lanka" target="Yugoslavia">
+      <data key="d3">0.7179285676780558</data>
+    </edge>
+    <edge source="St. Kitts and Nevis" target="St. Lucia">
+      <data key="d3">0.8240381295187609</data>
+    </edge>
+    <edge source="St. Kitts and Nevis" target="St. Vincent and the Grenadines">
+      <data key="d3">0.7890927044217944</data>
+    </edge>
+    <edge source="St. Lucia" target="St. Vincent and the Grenadines">
+      <data key="d3">0.7720533562118324</data>
+    </edge>
+    <edge source="Sudan" target="Tanzania">
+      <data key="d3">0.7310940860081873</data>
+    </edge>
+    <edge source="Sudan" target="Yemen">
+      <data key="d3">0.8259668508287294</data>
+    </edge>
+    <edge source="Sudan" target="Yemen Arab Republic">
+      <data key="d3">0.832109702642573</data>
+    </edge>
+    <edge source="Sudan" target="Yugoslavia">
+      <data key="d3">0.7646888290455209</data>
+    </edge>
+    <edge source="Sudan" target="Zambia">
+      <data key="d3">0.7150368884694445</data>
+    </edge>
+    <edge source="Syria" target="Vietnam">
+      <data key="d3">0.7323601204578503</data>
+    </edge>
+    <edge source="Syria" target="Yemen">
+      <data key="d3">0.8931003153804907</data>
+    </edge>
+    <edge source="Syria" target="Yemen Arab Republic">
+      <data key="d3">0.8667923025201938</data>
+    </edge>
+    <edge source="Syria" target="Yemen People's Republic">
+      <data key="d3">0.8579429498395488</data>
+    </edge>
+    <edge source="Tanzania" target="Uganda">
+      <data key="d3">0.76917280409198</data>
+    </edge>
+    <edge source="Tanzania" target="Yemen">
+      <data key="d3">0.8146146122025235</data>
+    </edge>
+    <edge source="Tanzania" target="Yemen Arab Republic">
+      <data key="d3">0.7238425568105756</data>
+    </edge>
+    <edge source="Tanzania" target="Yugoslavia">
+      <data key="d3">0.7401523121089685</data>
+    </edge>
+    <edge source="Tanzania" target="Zambia">
+      <data key="d3">0.8346110531725561</data>
+    </edge>
+    <edge source="Trinidad and Tobago" target="Yemen">
+      <data key="d3">0.8146402624721252</data>
+    </edge>
+    <edge source="Uganda" target="Zambia">
+      <data key="d3">0.7561049883482991</data>
+    </edge>
+    <edge source="Ukraine" target="Vietnam">
+      <data key="d3">0.8158471647602035</data>
+    </edge>
+    <edge source="United Arab Emirates" target="Yemen">
+      <data key="d3">0.814640262472125</data>
+    </edge>
+    <edge source="Vietnam" target="Yemen">
+      <data key="d3">0.8269230769230772</data>
+    </edge>
+    <edge source="Vietnam" target="Yemen People's Republic">
+      <data key="d3">0.8467832219578321</data>
+    </edge>
+    <edge source="Yemen Arab Republic" target="Yemen People's Republic">
+      <data key="d3">0.771179354265601</data>
+    </edge>
+    <edge source="Yemen Arab Republic" target="Zambia">
+      <data key="d3">0.7049551563441335</data>
+    </edge>
+    <edge source="Yugoslavia" target="Zambia">
+      <data key="d3">0.7150415587240971</data>
+    </edge>
+    <data key="d0">cold_war</data>
+  </graph>
+</graphml>

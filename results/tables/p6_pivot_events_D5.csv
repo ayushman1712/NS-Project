@@ -1,0 +1,10 @@
+country,session,year,mean_vote,deviation
+United States of America,13,1958.0,0.636,0.994
+United States of America,11,1956.0,0.597,0.948
+United States of America,9,1954.0,0.516,0.854
+Russia,1,1946.0,-0.07,0.854
+China,26,1971.0,0.42,0.897
+India,2,1947.0,-0.054,1.323
+India,1,1946.0,0.0,1.231
+India,3,1948.0,0.089,1.079
+India,6,1951.0,0.24,0.822

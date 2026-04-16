@@ -1,0 +1,4 @@
+transition,NMI,interpretation
+CW→PCW,0.6754,partial rupture
+PCW→9/11,0.7711,stable
+9/11→Recent,0.733,stable

@@ -1,0 +1,7 @@
+issue,issue_name,n_communities,modularity_Q,india_community,india_top_covoters
+me,Israel/Palestine,5,0.4224,2,"Yemen People's Republic(0.87), Tanzania(0.79), Indonesia(0.79), Pakistan(0.78), Oman(0.77)"
+co,Colonization,4,0.4012,0,"Indonesia(0.88), Sri Lanka(0.87), Oman(0.85), Bangladesh(0.83), Qatar(0.82)"
+hr,Human Rights,3,0.4136,0,"Vietnam(0.88), North Korea(0.87), China(0.84), Turkmenistan(0.80), Yemen(0.79)"
+di,Disarmament,6,0.4211,3,"Bhutan(0.66), Yemen People's Republic(0.49), Mauritius(0.48), Cuba(0.47), Taiwan(0.46)"
+nu,Nuclear,8,0.4357,3,"Bhutan(0.68), Mauritius(0.56), Seychelles(0.46), Myanmar(0.42), Ethiopia(0.42)"
+ec,Economic Dev,7,0.4239,0,"East Timor(0.86), Madagascar(0.76), North Korea(0.74), Libya(0.72), Ghana(0.71)"
