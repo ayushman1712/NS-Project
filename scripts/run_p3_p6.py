@@ -50,21 +50,38 @@ G_full = load_g('full')
 print("="*60); print("PHASE 3: Topology"); print("="*60)
 
 # ── P3.1: Degree distribution & power-law ────────────────────────
+# NOTE: With N~193, power-law fits have very low statistical power.
+# The contribution is geopolitical interpretation, not topological universality.
 degrees = np.array([d for _,d in G_full.degree()])
 fit = powerlaw.Fit(degrees[degrees>0], discrete=True, verbose=False)
 gamma = fit.power_law.alpha
-R, p_lr = fit.distribution_compare('power_law','exponential',normalized_ratio=True)
+R_exp, p_exp = fit.distribution_compare('power_law','exponential',normalized_ratio=True)
+R_ln, p_ln = fit.distribution_compare('power_law','lognormal',normalized_ratio=True)
 print(f"Power-law gamma = {gamma:.3f}")
-print(f"LR test vs exponential: R={R:.3f}, p={p_lr:.4f}")
+print(f"LR test vs exponential:  R={R_exp:.3f}, p={p_exp:.4f}")
+print(f"LR test vs log-normal:   R={R_ln:.3f}, p={p_ln:.4f}")
+if R_ln < 0:
+    print("  → Log-normal is a BETTER fit than power-law (expected for dense co-voting network)")
+else:
+    print("  → Power-law fits better than log-normal")
+
+# Degree assortativity
+r_assort = nx.degree_assortativity_coefficient(G_full)
+print(f"Degree assortativity r = {r_assort:.4f}")
+if r_assort > 0:
+    print("  → Assortative: similar-degree countries connect (bloc structure)")
+else:
+    print("  → Disassortative: hubs connect to low-degree nodes")
 
 fig, axes = plt.subplots(1,2,figsize=(13,5))
-fig.suptitle('Degree Distribution -- Full UNGA Network', color='white', fontsize=13)
+fig.suptitle('Degree Distribution — Full UNGA Network (N=193, interpret cautiously)', color='white', fontsize=12)
 axes[0].hist(degrees, bins=30, color='#58a6ff', alpha=0.8, edgecolor='#0d1117')
 axes[0].set_xlabel('Degree k'); axes[0].set_ylabel('Count')
 axes[0].set_title('Degree Histogram', color='white')
 fit.plot_ccdf(ax=axes[1], color='#58a6ff', label='Empirical')
 fit.power_law.plot_ccdf(ax=axes[1], color='#f85149', ls='--',
-                        label=f'Power law (g={gamma:.2f})')
+                        label=f'Power law (γ={gamma:.2f})')
+fit.lognormal.plot_ccdf(ax=axes[1], color='#ffa657', ls='-.', label='Log-normal')
 fit.exponential.plot_ccdf(ax=axes[1], color='#3fb950', ls=':', label='Exponential')
 axes[1].set_title('Log-Log CCDF', color='white')
 axes[1].legend(fontsize=8)
@@ -203,9 +220,11 @@ topo_rows = []
 for era in ERAS:
     G = load_g(era)
     degs = [d for _,d in G.degree()]
+    r_a = nx.degree_assortativity_coefficient(G) if G.number_of_edges() > 0 else np.nan
     topo_rows.append({'era':era,'N':G.number_of_nodes(),'M':G.number_of_edges(),
                       'density':round(nx.density(G),4),'avg_degree':round(np.mean(degs),2),
                       'max_degree':max(degs),'clustering':round(nx.average_clustering(G),4),
+                      'assortativity':round(r_a,4),
                       'n_components':nx.number_connected_components(G)})
 pd.DataFrame(topo_rows).to_csv(os.path.join(TABLES,'p3_topology.csv'), index=False)
 pd.DataFrame(hier_rows).to_csv(os.path.join(TABLES,'p3_hierarchy_slopes.csv'), index=False)
@@ -293,7 +312,7 @@ era_order = ['cold_war','post_cw','post_9_11','recent']
 valid_eras = [e for e in era_order if e in era_partitions]
 
 if len(valid_eras) >= 2:
-    # Build NMI
+    # Build NMI with null distribution for significance
     nmi_rows = []
     pairs = [('cold_war','post_cw','CW->PCW'),
              ('post_cw','post_9_11','PCW->9/11'),
@@ -304,10 +323,20 @@ if len(valid_eras) >= 2:
         common = sorted(set(p1) & set(p2))
         if len(common) < 10: continue
         v1 = [p1[c] for c in common]; v2 = [p2[c] for c in common]
-        nmi = normalized_mutual_info_score(v1, v2)
-        nmi_rows.append({'transition':lbl,'NMI':round(nmi,4),
-                         'interpretation':('stable' if nmi>0.7 else 'partial rupture' if nmi>0.4 else 'structural rupture')})
-        print(f"  NMI {lbl}: {nmi:.4f}")
+        nmi_real = normalized_mutual_info_score(v1, v2)
+        # Null distribution: shuffle labels 100x
+        null_nmis = []
+        for _ in range(100):
+            v2_shuf = np.random.permutation(v2).tolist()
+            null_nmis.append(normalized_mutual_info_score(v1, v2_shuf))
+        null_mean = np.mean(null_nmis)
+        null_std  = np.std(null_nmis)
+        z_score = (nmi_real - null_mean) / (null_std + 1e-9)
+        nmi_rows.append({'transition':lbl,'NMI':round(nmi_real,4),
+                         'null_mean':round(null_mean,4),'null_std':round(null_std,4),
+                         'z_score':round(z_score,2),
+                         'significant': 'yes' if z_score > 2 else 'no'})
+        print(f"  NMI {lbl}: {nmi_real:.4f} (null={null_mean:.4f}+-{null_std:.4f}, z={z_score:.1f})")
     nmi_df = pd.DataFrame(nmi_rows)
     nmi_df.to_csv(os.path.join(TABLES,'p4_nmi.csv'), index=False)
 
@@ -407,10 +436,30 @@ def attack_simulation(G, removal_order, stop_frac=0.5):
             results.append({'removed_frac':(i+1)/N_orig,'giant_frac':len(gcc)/N_orig})
     return pd.DataFrame(results)
 
+def adaptive_targeted_attack(G, stop_frac=0.5):
+    """Adaptive targeted attack: recompute betweenness after each removal.
+    Correct methodology per Barabási (2000) — static ordering underestimates fragility."""
+    H = G.copy(); N_orig = H.number_of_nodes()
+    max_rm = int(stop_frac * N_orig); results = []; removed_order = []
+    for i in range(max_rm):
+        if H.number_of_nodes() == 0: break
+        btw = nx.betweenness_centrality(H, weight='weight', normalized=True)
+        node = max(btw, key=btw.get)
+        removed_order.append(node)
+        H.remove_node(node)
+        if H.number_of_nodes() == 0:
+            results.append({'removed_frac':(i+1)/N_orig,'giant_frac':0}); break
+        elif H.number_of_edges() == 0:
+            results.append({'removed_frac':(i+1)/N_orig,'giant_frac':1/max(H.number_of_nodes(),1)})
+        else:
+            gcc = max(nx.connected_components(H), key=len)
+            results.append({'removed_frac':(i+1)/N_orig,'giant_frac':len(gcc)/N_orig})
+        if (i+1) % 20 == 0: print(f"    adaptive step {i+1}/{max_rm}", flush=True)
+    return pd.DataFrame(results), removed_order
+
 def run_robustness(G, n_rand=30, stop_frac=0.5):
-    btw = nx.betweenness_centrality(G, weight='weight', normalized=True)
-    t_order = sorted(btw, key=btw.get, reverse=True)
-    t_df    = attack_simulation(G, t_order, stop_frac)
+    # Adaptive targeted attack (recompute betweenness each step)
+    t_df, t_order = adaptive_targeted_attack(G, stop_frac)
     nodes   = list(G.nodes)
     x_grid  = np.linspace(0, stop_frac, 80)
     traces  = np.zeros((n_rand, len(x_grid)))
@@ -559,6 +608,7 @@ def make_edge_df(G):
     return pd.DataFrame(rows)
 
 def run_ols(df_e, label=''):
+    """OLS for point estimates (used internally by MRQAP)."""
     sub = df_e.dropna(subset=['agreement','same_region','same_income','log_gdp_ratio'])
     if len(sub) < 20: return None
     y = sub['agreement']
@@ -568,23 +618,57 @@ def run_ols(df_e, label=''):
     model = sm.OLS(y, X_sm).fit()
     return model
 
+def mrqap_permutation(G, make_edge_df_fn, n_perms=500):
+    """MRQAP: permute node labels to generate null distribution of betas.
+    This accounts for dyadic non-independence (Dekker et al. 2007)."""
+    real_df = make_edge_df_fn(G)
+    real_model = run_ols(real_df)
+    if real_model is None: return None, None, None
+    real_betas = real_model.params
+
+    null_betas = {k: [] for k in ['same_region','same_income','log_gdp_ratio']}
+    nodes = list(G.nodes())
+    for i in range(n_perms):
+        perm = np.random.permutation(nodes)
+        mapping = dict(zip(nodes, perm))
+        G_perm = nx.relabel_nodes(G, mapping)
+        perm_df = make_edge_df_fn(G_perm)
+        perm_model = run_ols(perm_df)
+        if perm_model is None: continue
+        for k in null_betas:
+            null_betas[k].append(perm_model.params.get(k, np.nan))
+        if (i+1) % 100 == 0: print(f"    MRQAP perm {i+1}/{n_perms}", flush=True)
+
+    # Compute MRQAP p-values
+    mrqap_pvals = {}
+    for k in null_betas:
+        null_arr = np.array(null_betas[k])
+        real_b = real_betas.get(k, 0)
+        mrqap_pvals[k] = np.mean(np.abs(null_arr) >= np.abs(real_b))
+    return real_model, real_betas, mrqap_pvals
+
+# NOTE: GDP data is a single 2020 cross-section applied to a 70-year panel.
+# This is a known limitation — GDP ratios were very different in 1960 vs 2020.
 beta_rows = []
-for era in ['full','cold_war','post_cw','post_9_11','recent']:
+for era in ['cold_war','post_cw','post_9_11','recent']:
+    print(f"  MRQAP for {era}...", flush=True)
     G_e   = load_g(era)
-    e_df  = make_edge_df(G_e)
-    model = run_ols(e_df, era)
-    if model is None: continue
-    params, pvals = model.params, model.pvalues
+    real_model, real_betas, mrqap_pvals = mrqap_permutation(G_e, make_edge_df, n_perms=500)
+    if real_model is None: continue
     beta_rows.append({
-        'era':era,'R2':round(model.rsquared,4),
-        'b_same_region':   round(params.get('same_region',np.nan),4),
-        'b_same_income':   round(params.get('same_income',np.nan),4),
-        'b_log_gdp_ratio': round(params.get('log_gdp_ratio',np.nan),4),
-        'p_same_region':   round(pvals.get('same_region',np.nan),4),
-        'p_same_income':   round(pvals.get('same_income',np.nan),4),
+        'era':era,'R2':round(real_model.rsquared,4),
+        'b_same_region':   round(real_betas.get('same_region',np.nan),4),
+        'b_same_income':   round(real_betas.get('same_income',np.nan),4),
+        'b_log_gdp_ratio': round(real_betas.get('log_gdp_ratio',np.nan),4),
+        'p_same_region':   round(mrqap_pvals.get('same_region',np.nan),4),
+        'p_same_income':   round(mrqap_pvals.get('same_income',np.nan),4),
+        'p_log_gdp_ratio': round(mrqap_pvals.get('log_gdp_ratio',np.nan),4),
+        'method': 'MRQAP(500 perms)',
     })
-    print(f"  {era}: R2={round(model.rsquared,4)}, b_region={round(params.get('same_region',np.nan),4)}, "
-          f"b_income={round(params.get('same_income',np.nan),4)}")
+    print(f"  {era}: R2={round(real_model.rsquared,4)}, b_region={round(real_betas.get('same_region',np.nan),4)} "
+          f"(p_mrqap={mrqap_pvals.get('same_region',np.nan):.3f}), "
+          f"b_income={round(real_betas.get('same_income',np.nan),4)} "
+          f"(p_mrqap={mrqap_pvals.get('same_income',np.nan):.3f})")
 
 beta_df = pd.DataFrame(beta_rows)
 beta_df.to_csv(os.path.join(TABLES,'p6_homophily_D4.csv'), index=False)
@@ -631,28 +715,30 @@ pivot_df = pd.DataFrame(pivot_rows)
 pivot_df.to_csv(os.path.join(TABLES,'p6_pivot_events_D5.csv'), index=False)
 print(pivot_df.to_string(index=False))
 
-# P6.4: Cascade radius (simplified)
-print("Cascade radius analysis (D5)...")
+# P6.4: Cascade radius with counterfactual (non-neighbour comparison)
+print("Cascade radius analysis with counterfactual (D5)...")
 sessions = sorted(df_full['session'].unique())
-gcc_sub_nodes = list(max(nx.connected_components(G_full), key=len))[:80]
-G_sub = G_full.subgraph(gcc_sub_nodes).copy()
+gcc_nodes = list(max(nx.connected_components(G_full), key=len))
+G_gcc = G_full.subgraph(gcc_nodes).copy()
 
 cascade_rows = []
 if not pivot_df.empty:
     for _, prow in pivot_df[pivot_df['country']=='India'].head(3).iterrows():
         country = prow['country']
         sess    = int(prow['session'])
-        if country not in G_sub: continue
+        if country not in G_gcc: continue
         idx = list(sessions).index(sess) if sess in sessions else -1
         if idx < 0 or idx+1 >= len(sessions): continue
         next_sess = sessions[idx+1]
         v_s  = df_full[(df_full['country']==country)&(df_full['session']==sess)]['v'].mean()
         v_s1 = df_full[(df_full['country']==country)&(df_full['session']==next_sess)]['v'].mean()
         delta = v_s1 - v_s
+
+        # Compute shortest path lengths once
+        sp_lengths = nx.single_source_shortest_path_length(G_gcc, country)
+
         for hop in range(1,4):
-            hop_nodes = [n for n in G_sub if n != country and
-                         nx.has_path(G_sub,country,n) and
-                         nx.shortest_path_length(G_sub,country,n)==hop]
+            hop_nodes = [n for n, d in sp_lengths.items() if d == hop]
             updated = total = 0
             for nb in hop_nodes:
                 vn0 = df_full[(df_full['country']==nb)&(df_full['session']==sess)]['v'].mean()
@@ -662,7 +748,22 @@ if not pivot_df.empty:
                 if delta != 0 and (vn1-vn0)*delta > 0: updated += 1
             cascade_rows.append({'country':country,'session':sess,'hop':hop,
                                  'n_countries':total,'updated':updated,
-                                 'frac_updated':updated/total if total>0 else np.nan})
+                                 'frac_updated':updated/total if total>0 else np.nan,
+                                 'group':'neighbours'})
+
+        # Counterfactual: non-neighbours (not connected at all, or hop > 3)
+        non_neighbours = [n for n in G_gcc if n != country and sp_lengths.get(n, 999) > 3]
+        nn_updated = nn_total = 0
+        for nb in non_neighbours:
+            vn0 = df_full[(df_full['country']==nb)&(df_full['session']==sess)]['v'].mean()
+            vn1 = df_full[(df_full['country']==nb)&(df_full['session']==next_sess)]['v'].mean()
+            if np.isnan(vn0) or np.isnan(vn1): continue
+            nn_total += 1
+            if delta != 0 and (vn1-vn0)*delta > 0: nn_updated += 1
+        cascade_rows.append({'country':country,'session':sess,'hop':'non-neighbour',
+                             'n_countries':nn_total,'updated':nn_updated,
+                             'frac_updated':nn_updated/nn_total if nn_total>0 else np.nan,
+                             'group':'counterfactual'})
 
 cascade_df = pd.DataFrame(cascade_rows)
 cascade_df.to_csv(os.path.join(TABLES,'p6_cascade_D5.csv'), index=False)
