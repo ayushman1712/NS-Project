@@ -1,4 +1,4 @@
-# ── Python & IDE ────────────────────────────────────────────────
+# Python & IDE
 venv/
 __pycache__/
 *.pyc
@@ -7,18 +7,16 @@ __pycache__/
 .DS_Store
 .env
 
-# ── Large raw data archives (download separately) ───────────────
+# Large data (download per README)
 *.zip
 *.Rdata
 *.dta
-
-# Raw data directories (too large to commit — download per README)
 kaggle_files/*
 !kaggle_files/.gitkeep
 dataverse_files/*
 !dataverse_files/.gitkeep
 
-# ── Generated outputs (re-created by running scripts) ───────────
+# Generated outputs (re-created by running scripts)
 data/processed/*
 !data/processed/.gitkeep
 results/networks/*
@@ -27,21 +25,3 @@ results/plots/*
 !results/plots/.gitkeep
 results/tables/*
 !results/tables/.gitkeep
-
-# ── Dev/patch scripts (temporary, not part of pipeline) ─────────
-fix_nb05_combinations.py
-fix_nb05_setup.py
-fix_nb05_step56.py
-fix_nb05_wrapper.py
-fix_nb06_cascade.py
-fix_nb06_refs.py
-fix_nb06_temporal_loop.py
-fix_plotly.py
-restore_nb05_exec.py
-apply_all_fixes.py
-scripts/_fix_facecolor.py
-scripts/_check_corr.py
-
-# ── Redundant/duplicate files ────────────────────────────────────
-notebooks/04_communities_FIXED.ipynb
-report/main_test.tex
