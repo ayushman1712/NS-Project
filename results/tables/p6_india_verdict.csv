@@ -1,11 +1,3 @@
-Metric,India Value,Notes
-Degree centrality rank,174,Higher rank = more connected
-Betweenness centrality rank,148,Higher rank = more bridge-role
-Eigenvector centrality rank,174,Higher rank = better connected neighbours
-Fragility rank (ΔS),162,ΔS=0.0
-Community in Israel/Palestine,Community 2,
-Community in Colonization,Community 0,
-Community in Human Rights,Community 0,
-Community in Disarmament,Community 3,
-Community in Nuclear,Community 3,
-Community in Economic Dev,Community 0,
+version https://git-lfs.github.com/spec/v1
+oid sha256:77770beaa8626fbfe7aeafbc561be140b6a124f757937909535f0534115a74fd
+size 494

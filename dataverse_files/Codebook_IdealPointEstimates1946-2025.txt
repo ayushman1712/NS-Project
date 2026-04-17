@@ -1,0 +1,138 @@
+============================================================================
+CODEBOOK: Idealpointestimates1946-2025.csv
+============================================================================
+
+TITLE
+    United Nations General Assembly Ideal Point Estimates, 1946-2025
+
+DESCRIPTION
+    This dataset contains dynamic ideal point estimates of state preferences
+    derived from United Nations General Assembly (UNGA) roll-call voting
+    data. The estimates are produced using a Bayesian item-response theory
+    (IRT) model with a random walk prior on state ideal points, estimated
+    via Markov chain Monte Carlo (MCMC) methods. The model estimates a
+    single latent dimension that captures state positions on a continuum
+    where higher values indicate positions more aligned with the United
+    States and Western democracies and lower values indicate positions
+    more aligned with the developing world consensus.
+
+METHOD
+    Bailey, Michael A., Anton Strezhnev, and Erik Voeten. "Estimating
+    Dynamic State Preferences from United Nations Voting Data." Journal
+    of Conflict Resolution 61, no. 2 (2017): 430-456.
+
+COVERAGE
+    Temporal:   1946-2025 (79 UNGA sessions)
+    Spatial:    197 unique countries/entities
+    Unit:       Country-year
+    Observations: 11,610
+
+FILE FORMAT
+    Comma-separated values (CSV), with header row.
+
+============================================================================
+VARIABLE DESCRIPTIONS
+============================================================================
+
+ccode
+    Correlates of War (COW) numeric country code.
+    Type: integer
+    Range: 2-990
+
+iso3c
+    ISO 3166-1 alpha-3 country code.
+    Type: string (3 characters)
+
+Countryname
+    Country name.
+    Type: string
+
+year
+    Calendar year corresponding to the UNGA session.
+    Type: integer
+    Range: 1946-2025
+
+NVotesFP
+    Number of UNGA roll-call votes in which the country participated in
+    the given year. This count reflects the votes used in the estimation
+    after applying the "future projections" (FP) bridging procedure, which
+    links votes across sessions to maintain comparability over time.
+    Type: integer
+    Range: 1-164
+
+IdealPointFP
+    Posterior mean of the estimated ideal point for the country-year,
+    derived from the MCMC estimation. Higher values correspond to
+    positions more aligned with the United States and Western democracies;
+    lower values correspond to positions more aligned with the consensus
+    of developing countries. The "FP" suffix denotes that estimates are
+    produced using the future projections bridging procedure.
+    Type: numeric (continuous)
+    Range: approximately -3.59 to 3.36
+
+
+Q5%FP
+    5th percentile of the posterior distribution of the ideal point
+    estimate.
+    Type: numeric (continuous)
+
+Q10%FP
+    10th percentile of the posterior distribution of the ideal point
+    estimate.
+    Type: numeric (continuous)
+
+Q50%FP
+    Median (50th percentile) of the posterior distribution of the ideal
+    point estimate.
+    Type: numeric (continuous)
+
+Q90%FP
+    90th percentile of the posterior distribution of the ideal point
+    estimate.
+    Type: numeric (continuous)
+
+Q95%FP
+    95th percentile of the posterior distribution of the ideal point
+    estimate.
+    Type: numeric (continuous)
+
+
+    Note: The interval [Q5%FP, Q95%FP] provides a 90% credible interval
+    for the ideal point estimate. The interval [Q10%FP, Q90%FP] provides
+    an 80% credible interval. Users can use these quantiles to assess the
+    uncertainty surrounding each estimate.
+
+
+
+============================================================================
+NOTES
+============================================================================
+
+1. The ideal points are estimated on a latent scale and are comparable
+   across countries and over time within this dataset. The dynamic model
+   with bridging observations ensures intertemporal comparability.
+
+2. Country-year observations appear only for years in which a country
+   was a UN member state and cast at least one roll-call vote.
+
+3. Estimates for country-years with very few votes (low NVotesFP) will
+   have wider credible intervals, reflecting greater uncertainty.
+
+4. Country codes follow the Correlates of War system. Users merging with
+   other datasets should verify mappings, as COW codes can differ from
+   other coding schemes (e.g., Gleditsch-Ward).
+
+============================================================================
+CITATION
+============================================================================
+
+    When using this dataset, please cite:
+
+    Bailey, Michael A., Anton Strezhnev, and Erik Voeten. "Estimating
+    Dynamic State Preferences from United Nations Voting Data." Journal
+    of Conflict Resolution 61, no. 2 (2017): 430-456.
+
+    Voeten, Erik. "United Nations General Assembly Ideal Point Estimates,
+    1946-2025." Available at: https://dataverse.harvard.edu/dataverse/Voeten
+
+============================================================================

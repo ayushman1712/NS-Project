@@ -1,11 +1,3 @@
-issue,country_a,country_b,betweenness,weight
-hr,Chile,Yemen Arab Republic,0.03122,0.4419
-hr,Czechoslovakia,Federated States of Micronesia,0.03025,0.511
-hr,Bolivia,Chile,0.0302,0.4301
-hr,Mongolia,Ukraine,0.02995,0.4196
-hr,Ecuador,Taiwan,0.02944,0.4577
-nu,Eritrea,Mongolia,0.03985,0.4032
-nu,Argentina,Bolivia,0.03629,0.4421
-nu,Mongolia,Russia,0.03259,0.4166
-nu,Ireland,Samoa,0.02807,0.4043
-nu,Belarus,Yemen People's Republic,0.02751,0.4147
+version https://git-lfs.github.com/spec/v1
+oid sha256:649d246e9beddc6f7e1d450f62ab51daae1cef3c9f32ea29fa4ac3ebfaef290d
+size 449

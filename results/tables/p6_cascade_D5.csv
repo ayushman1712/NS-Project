@@ -1,4 +1,3 @@
-hop,n_countries,updated,frac_updated,country,session
-1,3,2,0.6666666666666666,Russia,1
-2,0,0,,Russia,1
-3,11,3,0.2727272727272727,Russia,1
+version https://git-lfs.github.com/spec/v1
+oid sha256:795daa8689541ae9a534b9c15655eba6f4be316b18b5e7e3640f5d7f8b8dc5d1
+size 142

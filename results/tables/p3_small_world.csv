@@ -1,4 +1,3 @@
-metric,real,ER_mean
-Clustering C,0.6183033715906532,0.14456185422098192
-Avg path length <d>,3.225411821705426,1.895829457364341
-Small-world σ,2.5139810417953297,1.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c77d9ded31c2a3533d6c65808bc8381b6b5a20c7e812a7c15bc424c81bb5b9d
+size 170

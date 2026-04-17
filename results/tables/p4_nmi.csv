@@ -1,4 +1,3 @@
-transition,NMI,interpretation
-CW→PCW,0.6754,partial rupture
-PCW→9/11,0.7711,stable
-9/11→Recent,0.733,stable
+version https://git-lfs.github.com/spec/v1
+oid sha256:da3ac1a09bd1beec5da2ca5b9e2c30ca462909bdfef5c4298dd6fba2d2aa6872
+size 118
