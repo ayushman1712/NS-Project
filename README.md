@@ -42,28 +42,42 @@ NS-Project/
 
 | File | Source | Used for |
 |------|---------|----------|
-| `kaggle_files/votes.csv` | Kaggle (unitednations/general-assembly) | Core vote data (1946–2015) |
-| `kaggle_files/resolutions.csv` | Kaggle | Resolution metadata + 6 issue flags |
-| `kaggle_files/states.csv` | Kaggle | Country ideal-point estimates |
-| `dataverse_files/AgreementScores.csv` | Harvard Dataverse | Pre-computed pairwise agreement (validation) |
+| `kaggle_files/votes.csv` | [Kaggle: unitednations/general-assembly](https://www.kaggle.com/datasets/unitednations/general-assembly) | Core vote data (1946–2015) |
+| `kaggle_files/resolutions.csv` | Kaggle (same dataset) | Resolution metadata + 6 issue flags |
+| `kaggle_files/states.csv` | Kaggle (same dataset) | Country ideal-point estimates |
+| `dataverse_files/AgreementScores.csv` | [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LEJUQZ) | Pre-computed pairwise agreement (validation) |
 
-## Execution Order
+> **Note:** `kaggle_files/` and `dataverse_files/` are **not** committed to this repository due to their size.  
+> Download them manually from the links above and place CSV files into the respective folders before running any scripts.
 
-## Execution Order
-
-To run the project, it is highly recommended to use the generated python scripts inside the virtual environment:
+## Getting Started (fresh clone)
 
 ```powershell
-# 1. Activate the virtual environment
+# 1. Create and activate a virtual environment
+python -m venv venv
 .\venv\Scripts\activate
 
-# 2. Install dependencies
+# 2. Install all dependencies
 pip install -r requirements.txt
 
-# 3. Run the scripts in order
+# 3. Download raw data (see Data Sources above) into:
+#    kaggle_files/    ← votes.csv, resolutions.csv, states.csv
+#    dataverse_files/ ← AgreementScores.csv
+
+# 4. Run the pipeline in order
 python scripts/run_p1_data_prep.py
 python scripts/run_p2_networks.py
 python scripts/run_p3_p6.py
+```
+
+Alternatively, run the Jupyter notebooks in `notebooks/` in sequential order (01 → 06).
+
+## Execution Order
+
+```powershell
+python scripts/run_p1_data_prep.py   # Phase 1: clean data, temporal slices
+python scripts/run_p2_networks.py    # Phase 2: build 11 NetworkX graphs
+python scripts/run_p3_p6.py          # Phases 3–6: topology, communities, robustness, dynamics
 ```
 
 Alternatively, you can run the Jupyter notebooks in `notebooks/` in sequential order (1 to 6).
@@ -101,9 +115,10 @@ component stays connected. Issue networks use θ = 0.55 (sparser).
 
 ## Dependencies
 
-```
-networkx, numpy, pandas, matplotlib, scikit-learn,
-statsmodels, plotly, python-louvain, powerlaw, tqdm, kaleido
+Install all dependencies via:
+
+```powershell
+pip install -r requirements.txt
 ```
 
-Install all: `pip install python-louvain scikit-learn statsmodels plotly powerlaw tqdm kaleido`
+Key packages: `networkx`, `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `statsmodels`, `plotly`, `python-louvain`, `powerlaw`, `kaleido`, `nbformat`

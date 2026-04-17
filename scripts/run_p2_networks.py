@@ -39,8 +39,8 @@ ISSUE_MAP = {
     'hr': 'human_rights',     'di': 'disarmament',
     'nu': 'nuclear_weapons',  'ec': 'economic_development'
 }
-# Short codes → column names in votes_full.csv
-ISSUE_CODES = {'me':'me','co':'co','hr':'hr','di':'di','nu':'nu','ec':'ec'}
+# Short codes used as column names in votes_full.csv (same as ISSUE_MAP keys)
+ISSUE_CODES = list(ISSUE_MAP.keys())
 
 
 def build_agreement_matrix(df, min_votes=5):
@@ -151,7 +151,7 @@ print("\n[3/4] Building issue-specific graphs...")
 full_df      = pd.read_csv(os.path.join(PROC, 'votes_full.csv'))
 issue_graphs = {}
 
-for short, col in ISSUE_CODES.items():
+for short, col in ISSUE_MAP.items():
     if col not in full_df.columns:
         print(f"  WARNING: column '{col}' not found, skipping {short}")
         continue
